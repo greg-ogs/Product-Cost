@@ -6,7 +6,7 @@ Created on Mon Jun  5 11:07:01 2023
 """
 
 import pandas as pd
-import numpy as np
+import csv
 
 def loadData():
     compiladoData = pd.read_csv('compilado.csv', encoding = 'latin1')#Lee el archivo de compilado de produccion "procesos"
@@ -60,6 +60,7 @@ def searchFolio(NLCAD, NLCD): #Busca la informacion de un folio tanto dentro de 
 def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     #El argumento es la informacion de un folio, es decir, los procesos de cada folio dentro de la fabrica
     #ADD TO MACHINE
+    
     #Rama
     tiempoRama = 0
     lenFD = len(folioData) #tamaño de la lista con la informacion del folio
@@ -69,7 +70,7 @@ def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     print("=============================================")
     print("El tiempo total en Rama es:" + str(tiempoRama) + " minutos ") #Imprime el tiempo
     print("=============================================")    
-
+    
     #Stork
     tiempoStork = 0
     lenFD = len(folioData)
@@ -110,12 +111,49 @@ def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     print("El tiempo total en Jet es:" + str(tiempoJet) + " minutos ")
     print("=============================================")
     
-    
-    
+    return(tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama)
+
+def orderByFolio(NLCAD, NLCD):
+#Replica la funcion folioData pero para todos los folios
+    folioDB = []
+    lenA = len(NLCAD) #Largo de la base de datos de revisado
+    for i in range(lenA):
+        toSearchA = str(NLCAD[i][0]) #Folio a ser comparado
+        lenB = len(NLCD) #Largo de la base de datos del compilado de produccion
+        folioData = []
+        for j in range(lenB):
+            toSearchB = str(NLCD[j][1]) #Folio a ser comparado 
+            if toSearchA == toSearchB: #Comparacion
+                #print("==============" + str(NLCD[i][:]) + "==============")
+                folioData.append(NLCD[j][:])
+        folioDB.append(folioData) #Crea una matriz de 3D donde:
+            #La primera dim es para cada folio diferente
+            #La segunda dim es para cada registro de ese folio
+            #La tercera es para cada dato de ese registro
+    return(folioDB)
+
+def calAndPrintAllTimes(folioDB):
+    lenC = len(folioDB) #Largo de la primera dim equivalente al numero de folios revisados
+    times = []
+    for i in range(lenC): #Para cada folio 
+        folioToCalc = folioDB[i][:][:] #Toma la info de cada folio
+        if len(folioDB[i][:][:]) > 0:
+            noFolio = str(folioDB[i][0][1]) #Toma el folio
+            noFolio = noFolio[0:5]
+            noFolio = int(noFolio)
+        tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama = timePFolio(folioToCalc)
+        machineTimes = [noFolio, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama] 
+        times.append(machineTimes)
+    with open('TimePMachine.csv', 'a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(times)
+        file.close()
+        
 try:
     NLCAD, NLCD = loadData()
-    folioData = searchFolio(NLCAD, NLCD)
-    tiempoPFolio(folioData)
+    #folioData = searchFolio(NLCAD, NLCD) buscar un solo folio
+    folioDB = orderByFolio(NLCAD, NLCD)
+    calAndPrintAllTimes(folioDB)
 
 
 except(KeyboardInterrupt()):
