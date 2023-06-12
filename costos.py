@@ -135,6 +135,29 @@ def orderByFolio(NLCAD, NLCD):
 def metrosRe(NLCAD, i):
     metrosR = NLCAD[i][3]
     return(metrosR)
+
+def timePerMeter(metrosR, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama):
+    if tiempoJet > 0: 
+        velJet = metrosR/tiempoJet
+    else:
+        velJet = 0
+    if tiempoCombi > 0:
+        velCom = metrosR/tiempoCombi
+    else:
+        velCom = 0
+    if tiempoHT > 0:
+        velHT = metrosR/tiempoHT
+    else:
+        velHT = 0
+    if tiempoStork > 0:
+        velStork =metrosR/tiempoStork
+    else:
+        velStork = 0
+    if tiempoRama > 0:
+        velRama = metrosR/tiempoRama
+    else: 
+        velRama = 0
+    return(velJet, velCom, velHT, velStork, velRama)
     
 def calAndPrintAllTimes(folioDB, NLCAD):
     lenC = len(folioDB) #Largo de la primera dim equivalente al numero de folios revisados
@@ -145,9 +168,10 @@ def calAndPrintAllTimes(folioDB, NLCAD):
             noFolio = str(folioDB[i][0][1]) #Toma el folio
             noFolio = noFolio[0:5]
             noFolio = int(noFolio)
-        metrosR = metrosRe(NLCAD, i)
+        metrosR = metrosRe(NLCAD, i) #Metros totales recibidos en almacen
         tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama = timePFolio(folioToCalc)
-        machineTimes = [noFolio, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR] 
+        velJet, velCom, velHT, velStork, velRama = timePerMeter(metrosR, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama) #Tiempo de maquina por metro
+        machineTimes = [noFolio, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velJet, velCom, velHT, velStork, velRama] #Var to incert into csv
         times.append(machineTimes)
     with open('TimePMachine.csv', 'a', newline='') as file:
         writer = csv.writer(file)
