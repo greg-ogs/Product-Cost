@@ -149,12 +149,3 @@ def calAndPrintAllTimes(folioDB):
         writer.writerows(times)
         file.close()
         
-try:
-    NLCAD, NLCD = loadData()
-    #folioData = searchFolio(NLCAD, NLCD) buscar un solo folio
-    folioDB = orderByFolio(NLCAD, NLCD)
-    calAndPrintAllTimes(folioDB)
-
-
-except(KeyboardInterrupt()):
-    print("error, cierre del programa por usuario, vuelva a correr el programa")
