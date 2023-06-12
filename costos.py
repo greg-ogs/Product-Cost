@@ -132,7 +132,11 @@ def orderByFolio(NLCAD, NLCD):
             #La tercera es para cada dato de ese registro
     return(folioDB)
 
-def calAndPrintAllTimes(folioDB):
+def metrosRe(NLCAD, i):
+    metrosR = NLCAD[i][3]
+    return(metrosR)
+    
+def calAndPrintAllTimes(folioDB, NLCAD):
     lenC = len(folioDB) #Largo de la primera dim equivalente al numero de folios revisados
     times = []
     for i in range(lenC): #Para cada folio 
@@ -141,11 +145,12 @@ def calAndPrintAllTimes(folioDB):
             noFolio = str(folioDB[i][0][1]) #Toma el folio
             noFolio = noFolio[0:5]
             noFolio = int(noFolio)
+        metrosR = metrosRe(NLCAD, i)
         tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama = timePFolio(folioToCalc)
-        machineTimes = [noFolio, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama] 
+        machineTimes = [noFolio, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR] 
         times.append(machineTimes)
     with open('TimePMachine.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(times)
         file.close()
-        
+
