@@ -65,7 +65,7 @@ def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     tiempoRama = 0
     lenFD = len(folioData) #tamaño de la lista con la informacion del folio
     for i in range(lenFD): #corre en el largo de la lista con la informacion del folio
-        if folioData[i][5] == "Rama Bruckner": #compara la cadena para determinar si es de una maquina u otra
+        if folioData[i][5] == "Rama Bruckner" or folioData[i][5] == "Rama bruckner": #compara la cadena para determinar si es de una maquina u otra
             tiempoRama = tiempoRama + int(folioData[i][11]) #Suma los tiempos si concide la maquina
     print("=============================================")
     print("El tiempo total en Rama es:" + str(tiempoRama) + " minutos ") #Imprime el tiempo
@@ -75,7 +75,7 @@ def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     tiempoStork = 0
     lenFD = len(folioData)
     for i in range(lenFD):
-        if folioData[i][5] == "Estampadora":
+        if folioData[i][5] == "Estampadora Stork":
             tiempoStork = tiempoStork + int(folioData[i][11])
     print("=============================================")
     print("El tiempo total en Estampadora es:" + str(tiempoStork) + " minutos ")
@@ -95,10 +95,20 @@ def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     tiempoCombi = 0
     lenFD = len(folioData)
     for i in range(lenFD):
-        if folioData[i][5] == "Jigger Combi":
+        if folioData[i][5] == "Jigger Combi" or folioData[i][5] == "Jigger combi":
             tiempoCombi = tiempoCombi + int(folioData[i][11])
     print("=============================================")
     print("El tiempo total en Jigger Combi es:" + str(tiempoCombi) + " minutos ")
+    print("=============================================")
+    
+    #Jigger ATM
+    tiempoATM = 0
+    lenFD = len(folioData)
+    for i in range(lenFD):
+        if folioData[i][5] == "Jigger ATM":
+            tiempoATM = tiempoATM + int(folioData[i][11])
+    print("=============================================")
+    print("El tiempo total en Jigger ATM es:" + str(tiempoCombi) + " minutos ")
     print("=============================================")
     
     #Jet
@@ -111,7 +121,7 @@ def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     print("El tiempo total en Jet es:" + str(tiempoJet) + " minutos ")
     print("=============================================")
     
-    return(tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama)
+    return(tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama)
 
 def orderByFolio(NLCAD, NLCD):
 #Replica la funcion folioData pero para todos los folios
@@ -119,10 +129,12 @@ def orderByFolio(NLCAD, NLCD):
     lenA = len(NLCAD) #Largo de la base de datos de revisado
     for i in range(lenA):
         toSearchA = str(NLCAD[i][0]) #Folio a ser comparado
+        toSearchA = toSearchA[0:5]
         lenB = len(NLCD) #Largo de la base de datos del compilado de produccion
         folioData = []
         for j in range(lenB):
             toSearchB = str(NLCD[j][1]) #Folio a ser comparado 
+            toSearchB = toSearchB[0:5]
             if toSearchA == toSearchB: #Comparacion
                 #print("==============" + str(NLCD[i][:]) + "==============")
                 folioData.append(NLCD[j][:])
@@ -136,7 +148,11 @@ def metrosRe(NLCAD, i):
     metrosR = NLCAD[i][3]
     return(metrosR)
 
-def timePerMeter(metrosR, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama):
+def timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama):
+    if tiempoATM > 0:
+        velATM = metrosR/tiempoATM
+    else:
+        velATM = 0
     if tiempoJet > 0: 
         velJet = metrosR/tiempoJet
     else:
@@ -157,7 +173,7 @@ def timePerMeter(metrosR, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoR
         velRama = metrosR/tiempoRama
     else: 
         velRama = 0
-    return(velJet, velCom, velHT, velStork, velRama)
+    return(velATM, velJet, velCom, velHT, velStork, velRama)
     
 def calAndPrintAllTimes(folioDB, NLCAD):
     lenC = len(folioDB) #Largo de la primera dim equivalente al numero de folios revisados
@@ -168,11 +184,11 @@ def calAndPrintAllTimes(folioDB, NLCAD):
             noFolio = str(folioDB[i][0][1]) #Toma el folio
             noFolio = noFolio[0:5]
             noFolio = int(noFolio)
-        metrosR = metrosRe(NLCAD, i) #Metros totales recibidos en almacen
-        tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama = timePFolio(folioToCalc)
-        velJet, velCom, velHT, velStork, velRama = timePerMeter(metrosR, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama) #Tiempo de maquina por metro
-        machineTimes = [noFolio, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velJet, velCom, velHT, velStork, velRama] #Var to incert into csv
-        times.append(machineTimes)
+            metrosR = metrosRe(NLCAD, i) #Metros totales recibidos en almacen
+            tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama = timePFolio(folioToCalc)
+            velATM, velJet, velCom, velHT, velStork, velRama = timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama) #Tiempo de maquina por metro
+            machineTimes = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velATM, velJet, velCom, velHT, velStork, velRama] #Var to incert into csv
+            times.append(machineTimes)
     with open('TimePMachine.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(times)
