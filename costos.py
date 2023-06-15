@@ -31,31 +31,6 @@ def loadData():
     return(NLCAD, NLCD)        
     
 
-def searchFolio(NLCAD, NLCD): #Busca la informacion de un folio tanto dentro de la fabrica como en el revisado
-    #para asi comparar y conocer su estado.
-    print("Busqueda de folio")
-    print("Ingrese el folio que desea buscar (Agregue un '.0' al final)")
-    FOLIO = input()
-    print("Usted desa buscar el folio " + str(FOLIO) + ", oprima ENTER para confirmar, oprima C + ENTER para cancelar")
-    ans = input()
-    if ans == "c" or ans == "C": #condicion para cancelar, falta mejorarla
-        print("Cancel")
-        return(ans)
-    else: # si no se cancela, se continua
-        lenA = len(NLCAD) #Largo de la base de datos de revisado
-        for i in range(lenA):
-            toSearch = str(NLCAD[i][0]) #Folio a ser comparado con el ingresado/solicitado
-            if toSearch == FOLIO: #Comparacion
-                print("Folio revisado")
-                
-        lenB = len(NLCD) #Largo de la base de datos del compilado de produccion
-        folioData = []
-        for i in range(lenB):
-            toSearch = str(NLCD[i][1]) #Folio a ser comparado con el ingresado/solicitado
-            if toSearch == FOLIO: #Comparacion
-                #print("==============" + str(NLCD[i][:]) + "==============")
-                folioData.append(NLCD[i][:]) #se agrega el registro/proceso a la lista
-        return(folioData)
 
 def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     #El argumento es la informacion de un folio, es decir, los procesos de cada folio dentro de la fabrica
