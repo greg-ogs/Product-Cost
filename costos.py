@@ -29,8 +29,54 @@ def loadData():
         if str(ListCalidadData[i][0]) != "nan":
             NLCAD.append(ListCalidadData[:][i])
     return(NLCAD, NLCD)        
-    
 
+def orderByFolio(NLCAD, NLCD):
+#Replica la funcion folioData pero para todos los folios
+    folioDB = []
+    lenA = len(NLCAD) #Largo de la base de datos de revisado
+    for i in range(lenA):
+        toSearchA = str(NLCAD[i][0]) #Folio a ser comparado
+        toSearchA = toSearchA[0:5]
+        lenB = len(NLCD) #Largo de la base de datos del compilado de produccion
+        folioData = []
+        for j in range(lenB):
+            toSearchB = str(NLCD[j][1]) #Folio a ser comparado 
+            toSearchB = toSearchB[0:5]
+            if toSearchA == toSearchB: #Comparacion
+                #print("==============" + str(NLCD[i][:]) + "==============")
+                folioData.append(NLCD[j][:])
+        folioDB.append(folioData) #Crea una matriz de 3D donde:
+            #La primera dim es para cada folio diferente
+            #La segunda dim es para cada registro de ese folio
+            #La tercera es para cada dato de ese registro
+    return(folioDB)
+
+def calAndPrintAllTimes(folioDB, NLCAD): #Funcion que recolecta el resultado de varias
+    #toma la base de datos tridimencional y busca en cada folio (primera dim)
+    #En cada una manda a llamar la funcion de tiempo total por folio 
+    #para asi dar el tiempo total de maquina para cada folio
+    lenC = len(folioDB) #Largo de la primera dim equivalente al numero de folios revisados
+    times = []
+    for i in range(lenC): #Para cada folio 
+        folioToCalc = folioDB[i][:][:] #Toma la info de cada folio
+        if len(folioDB[i][:][:]) > 0:
+            noFolio = str(folioDB[i][0][1]) #Toma el folio
+            noFolio = noFolio[0:5]
+            noFolio = int(noFolio)
+            metrosR = metrosRe(NLCAD, i) #Metros totales recibidos en almacen
+            #se envia el folio al que se desa calcular el tiempode cada maquina
+            tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama = timePFolio(folioToCalc)
+            #Se toman los tiempos que devolvieron y se calcula la velocidad de produccion por maquina
+            velATM, velJet, velCom, velHT, velStork, velRama = timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama) #Tiempo de maquina por metro
+            # se guarda todo en una lista
+            machineTimes = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velATM, velJet, velCom, velHT, velStork, velRama] #Var to incert into csv
+            #Se agrega a una matriz con la forma folio-tiempos-velocidades
+            times.append(machineTimes)
+    #al terminar de recorrer todos los folios se imprime en un archivo delimitados por comas
+    with open('TimePMachine.csv', 'a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(times)
+        file.close()
 
 def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     #El argumento es la informacion de un folio, es decir, los procesos de cada folio dentro de la fabrica
@@ -98,30 +144,6 @@ def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     
     return(tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama)
 
-def orderByFolio(NLCAD, NLCD):
-#Replica la funcion folioData pero para todos los folios
-    folioDB = []
-    lenA = len(NLCAD) #Largo de la base de datos de revisado
-    for i in range(lenA):
-        toSearchA = str(NLCAD[i][0]) #Folio a ser comparado
-        toSearchA = toSearchA[0:5]
-        lenB = len(NLCD) #Largo de la base de datos del compilado de produccion
-        folioData = []
-        for j in range(lenB):
-            toSearchB = str(NLCD[j][1]) #Folio a ser comparado 
-            toSearchB = toSearchB[0:5]
-            if toSearchA == toSearchB: #Comparacion
-                #print("==============" + str(NLCD[i][:]) + "==============")
-                folioData.append(NLCD[j][:])
-        folioDB.append(folioData) #Crea una matriz de 3D donde:
-            #La primera dim es para cada folio diferente
-            #La segunda dim es para cada registro de ese folio
-            #La tercera es para cada dato de ese registro
-    return(folioDB)
-
-def metrosRe(NLCAD, i):
-    metrosR = NLCAD[i][3]
-    return(metrosR)
 
 def timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama):
     if tiempoATM > 0:
@@ -149,23 +171,11 @@ def timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoSto
     else: 
         velRama = 0
     return(velATM, velJet, velCom, velHT, velStork, velRama)
-    
-def calAndPrintAllTimes(folioDB, NLCAD):
-    lenC = len(folioDB) #Largo de la primera dim equivalente al numero de folios revisados
-    times = []
-    for i in range(lenC): #Para cada folio 
-        folioToCalc = folioDB[i][:][:] #Toma la info de cada folio
-        if len(folioDB[i][:][:]) > 0:
-            noFolio = str(folioDB[i][0][1]) #Toma el folio
-            noFolio = noFolio[0:5]
-            noFolio = int(noFolio)
-            metrosR = metrosRe(NLCAD, i) #Metros totales recibidos en almacen
-            tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama = timePFolio(folioToCalc)
-            velATM, velJet, velCom, velHT, velStork, velRama = timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama) #Tiempo de maquina por metro
-            machineTimes = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velATM, velJet, velCom, velHT, velStork, velRama] #Var to incert into csv
-            times.append(machineTimes)
-    with open('TimePMachine.csv', 'a', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerows(times)
-        file.close()
+ 
+def metrosRe(NLCAD, i):
+    metrosR = NLCAD[i][3]
+    return(metrosR)
+   
+
+
 

@@ -11,7 +11,7 @@ import csv
 def searchFolio(NLCAD, NLCD): #Busca la informacion de un folio tanto dentro de la fabrica como en el revisado
     #para asi comparar y conocer su estado.
     print("Busqueda de folio")
-    print("Ingrese el folio que desea buscar (Agregue un '.0' al final)")
+    print("Ingrese el folio que desea buscar")
     FOLIO = input()
     print("Usted desa buscar el folio " + str(FOLIO) + ", oprima ENTER para confirmar, oprima C + ENTER para cancelar")
     ans = input()
@@ -28,7 +28,8 @@ def searchFolio(NLCAD, NLCD): #Busca la informacion de un folio tanto dentro de 
         lenB = len(NLCD) #Largo de la base de datos del compilado de produccion
         folioData = []
         for i in range(lenB):
-            toSearch = str(NLCD[i][1]) #Folio a ser comparado con el ingresado/solicitado
+            toSearch = str(NLCD[i][1])
+            toSearch = toSearch[0:5] #Folio a ser comparado con el ingresado/solicitado
             if toSearch == FOLIO: #Comparacion
                 #print("==============" + str(NLCD[i][:]) + "==============")
                 folioData.append(NLCD[i][:]) #se agrega el registro/proceso a la lista
