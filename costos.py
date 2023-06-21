@@ -70,13 +70,18 @@ def calAndPrintAllTimes(folioDB, NLCAD): #Funcion que recolecta el resultado de 
             velATM, velJet, velCom, velHT, velStork, velRama = timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama) #Tiempo de maquina por metro
             # se guarda todo en una lista
             machineTimes = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velATM, velJet, velCom, velHT, velStork, velRama] #Var to incert into csv
+            #Call cost function
+            costATM ,costJet, costCom ,costHT, costEstampadora, costRama = costomaquina(machineTimes)
+            #Add cost per machine 
+            machineCost = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velATM, velJet, velCom, velHT, velStork, velRama, costATM ,costJet, costCom ,costHT, costEstampadora, costRama]
             #Se agrega a una matriz con la forma folio-tiempos-velocidades
-            times.append(machineTimes)
+            times.append(machineCost)
     #al terminar de recorrer todos los folios se imprime en un archivo delimitados por comas
     with open('TimePMachine.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(times)
         file.close()
+    return(machineTimes, times)
 
 def timePFolio(folioData):    #Calcula el tiempo de cada maquina para un folio
     #El argumento es la informacion de un folio, es decir, los procesos de cada folio dentro de la fabrica
@@ -175,7 +180,23 @@ def timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoSto
 def metrosRe(NLCAD, i):
     metrosR = NLCAD[i][3]
     return(metrosR)
-   
 
+def costomaquina(machineTimes):
+    #noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama
+    costPminRama = 10#input()
+    costPminEstampadora = 10#input()
+    costPminHT = 10#input()
+    costPminATM = 10#input()
+    costPminJet = 10#input()
+    costPminCom = 10#input()
+    #costPminElitex = input()
+    #costElitex = machineTimes[][]
+    costRama = machineTimes[6]*costPminRama
+    costEstampadora = machineTimes[5]*costPminEstampadora
+    costHT = machineTimes[4]*costPminHT
+    costATM = machineTimes[1]*costPminATM
+    costJet = machineTimes[2]*costPminJet
+    costCom = machineTimes[3]*costPminCom
+    return(costATM ,costJet, costCom ,costHT, costEstampadora, costRama)
 
 
