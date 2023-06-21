@@ -199,5 +199,5 @@ def costomaquina(machineTimes):
     costCom = machineTimes[3]*costPminCom
     return(costATM ,costJet, costCom ,costHT, costEstampadora, costRama)
 
-def consumosMaquina():
+def consumosMaquina(costoAgua, costoLuz, costoGas, consumosMachine):
     costPminRama = (costtoAgua*consumoAguaR)+(costoLuz*consumoLuzR)+(costoGas*ConsumoGasR)
