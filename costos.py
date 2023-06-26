@@ -56,6 +56,10 @@ def calAndPrintAllTimes(folioDB, NLCAD): #Funcion que recolecta el resultado de 
     #En cada una manda a llamar la funcion de tiempo total por folio 
     #para asi dar el tiempo total de maquina para cada folio
     lenC = len(folioDB) #Largo de la primera dim equivalente al numero de folios revisados
+    #ask for cost
+    costL = float(input("Cual es el precio de la luz"))
+    costW = float(input("Cual es el precio de el agua"))
+    costG = float(input("Cuales el precio del gas"))
     times = []
     for i in range(lenC): #Para cada folio 
         folioToCalc = folioDB[i][:][:] #Toma la info de cada folio
@@ -69,11 +73,15 @@ def calAndPrintAllTimes(folioDB, NLCAD): #Funcion que recolecta el resultado de 
             #Se toman los tiempos que devolvieron y se calcula la velocidad de produccion por maquina
             velATM, velJet, velCom, velHT, velStork, velRama = timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama) #Tiempo de maquina por metro
             # se guarda todo en una lista
-            machineTimes = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velATM, velJet, velCom, velHT, velStork, velRama] #Var to incert into csv
+            machineTimes = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, 
+                            metrosR, velATM, velJet, velCom, velHT, velStork, velRama] 
+            #Var to incert into csv
             #Call cost function
-            costATM ,costJet, costCom ,costHT, costEstampadora, costRama = costomaquina(machineTimes)
+            costATM ,costJet, costCom ,costHT, costStork, costRama = costomaquina(machineTimes, costL, costW, costG)
             #Add cost per machine 
-            machineCost = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama, metrosR, velATM, velJet, velCom, velHT, velStork, velRama, costATM ,costJet, costCom ,costHT, costEstampadora, costRama]
+            machineCost = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama,
+                            metrosR, velATM, velJet, velCom, velHT, velStork, velRama, costATM,
+                            costJet, costCom ,costHT, costStork, costRama]
             #Se agrega a una matriz con la forma folio-tiempos-velocidades
             times.append(machineCost)
     #al terminar de recorrer todos los folios se imprime en un archivo delimitados por comas
@@ -181,23 +189,27 @@ def metrosRe(NLCAD, i):
     metrosR = NLCAD[i][3]
     return(metrosR)
 
-def costomaquina(machineTimes):
+def costomaquina(machineTimes, costL, costW, costG):
     #noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama
-    costPminRama = 10#input()
-    costPminEstampadora = 10#input()
-    costPminHT = 10#input()
-    costPminATM = 10#input()
-    costPminJet = 10#input()
-    costPminCom = 10#input()
+
+    costPminATM, costPminJet, costPminCom, costPminHT, costPminStork, costPminRama = consumosMaquina(
+        costW, costL, costG)
     #costPminElitex = input()
     #costElitex = machineTimes[][]
-    costRama = machineTimes[6]*costPminRama
-    costEstampadora = machineTimes[5]*costPminEstampadora
-    costHT = machineTimes[4]*costPminHT
     costATM = machineTimes[1]*costPminATM
     costJet = machineTimes[2]*costPminJet
     costCom = machineTimes[3]*costPminCom
-    return(costATM ,costJet, costCom ,costHT, costEstampadora, costRama)
+    costHT = machineTimes[4]*costPminHT
+    costStork = machineTimes[5]*costPminStork
+    costRama = machineTimes[6]*costPminRama
 
-def consumosMaquina(costoAgua, costoLuz, costoGas, consumosMachine):
-    costPminRama = (costoAgua*consumoAguaR)+(costoLuz*consumoLuzR)+(costoGas*ConsumoGasR)
+    return(costATM ,costJet, costCom ,costHT, costStork, costRama)
+
+def consumosMaquina(costW, costL, costG):
+    costPminATM = (0.045*costL) + (0*costW) + (0*costG)
+    costPminJet = (0) + (0*costW) + (0*costG)
+    costPminCom = (0.3483333*costL) + (0*costW) + (0*costG)
+    costPminHT = (0.156667*costL) + (0*costW) + (0*costG)
+    costPminStork = (0.62*costL) + (0*costW) + (0*costG)
+    costPminRama = (1.008333*costL) + (0*costW) + (0*costG)
+    return(costPminATM, costPminJet, costPminCom, costPminHT, costPminStork, costPminRama)
