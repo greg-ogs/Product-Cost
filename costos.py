@@ -80,8 +80,7 @@ def calAndPrintAllTimes(folioDB, NLCAD): #Funcion que recolecta el resultado de 
             costATM ,costJet, costCom ,costHT, costStork, costRama = costomaquina(machineTimes, costL, costW, costG)
             #Add cost per machine 
             machineCost = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama,
-                            metrosR, velATM, velJet, velCom, velHT, velStork, velRama, costATM,
-                            costJet, costCom ,costHT, costStork, costRama]
+                            metrosR, costATM, costJet, costCom ,costHT, costStork, costRama, velATM, velJet, velCom, velHT, velStork, velRama]
             #Se agrega a una matriz con la forma folio-tiempos-velocidades
             times.append(machineCost)
     #al terminar de recorrer todos los folios se imprime en un archivo delimitados por comas
@@ -211,5 +210,5 @@ def consumosMaquina(costW, costL, costG):
     costPminCom = (0.3483333*costL) + (0*costW) + (0*costG)
     costPminHT = (0.156667*costL) + (0*costW) + (0*costG)
     costPminStork = (0.62*costL) + (0*costW) + (0*costG)
-    costPminRama = (1.008333*costL) + (0*costW) + (0*costG)
+    costPminRama = (0.870066855668766*costL) + (0*costW) + (0*costG)
     return(costPminATM, costPminJet, costPminCom, costPminHT, costPminStork, costPminRama)
