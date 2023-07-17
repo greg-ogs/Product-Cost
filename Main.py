@@ -8,12 +8,12 @@ import costos as co
 import ONEfolio as single
 
 try:
-    #Multiple folio data
-    #noFolio,tiempoATM,tiempoJet,tiempoCombi,tiempoHT,tiempoStork,tiempoRama,metrosR,costATM,costJet,costCom,costHT,costStork,costRama,velATM,velJet,velCom,velHT,velStork,velRama
-    NLCAD, NLCD = co.loadData()
-    folioDB = co.orderByFolio(NLCAD, NLCD)
-    co.calAndPrintAllTimes(folioDB, NLCAD)
-    #single folio data
-    #folioData = searchFolio(NLCAD, NLCD) buscar un solo folio
+    # Multiple folio data
+    # noFolio,tiempoATM,tiempoJet,tiempoCombi,tiempoHT,tiempoStork,tiempoRama,metrosR,costATM,costJet,costCom,costHT,costStork,costRama,velATM,velJet,velCom,velHT,velStork,velRama
+    nlcad, nlcd = co.load_data()
+    folioDB = co.order_by_folio(nlcad, nlcd)
+    co.cal_and_print_all_times(folioDB, nlcad)
+    # single folio data
+    # folioData = searchFolio(NLCAD, NLCD) buscar un solo folio
 except(KeyboardInterrupt()):
     print("error, cierre del programa por usuario, vuelva a correr el programa")

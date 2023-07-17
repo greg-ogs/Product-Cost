@@ -9,226 +9,234 @@ import pandas as pd
 import csv
 
 
-def loadData():
-    compiladoData = pd.read_csv('compilado.csv',
-                                encoding='latin1')  # Lee el archivo de compilado de produccion "procesos"
-    shapeA = compiladoData.shape  # Dimencion de la base de datos
+def load_data():
+    compilado_data = pd.read_csv('compilado.csv',
+                                 encoding='latin1')  # Lee el archivo de compilado de produccion "procesos"
+    shape_a = compilado_data.shape  # Dimencion de la base de datos
 
-    ListCompiladoData = compiladoData.values.tolist()  # pasa de dataframe a lista
+    list_compilado_data = compilado_data.values.tolist()  # pasa de dataframe a lista
     # Eliminar valores nan
-    NLCD = []
+    nlcd = []
     # Recorre la lista en busca de valores nan
-    for i in range(shapeA[0]):
-        if str(ListCompiladoData[i][1]) != "nan":
-            NLCD.append(ListCompiladoData[:][i])  # Si cumple la condicion los agrega a una lista vacia
+    for i in range(shape_a[0]):
+        if str(list_compilado_data[i][1]) != "nan":
+            nlcd.append(list_compilado_data[:][i])  # Si cumple la condicion los agrega a una lista vacia
 
-    calidadData = pd.read_csv('calidad.csv', encoding='latin1')  # repite lo anterior pero con la lista de revisado
-    shapeB = calidadData.shape
+    calidad_data = pd.read_csv('calidad.csv', encoding='latin1')  # repite lo anterior pero con la lista de revisado
+    shape_b = calidad_data.shape
 
-    ListCalidadData = calidadData.values.tolist()
-    NLCAD = []
-    for i in range(shapeB[0]):
-        if str(ListCalidadData[i][0]) != "nan":
-            NLCAD.append(ListCalidadData[:][i])
-    return (NLCAD, NLCD)
+    list_calidad_data = calidad_data.values.tolist()
+    nlcad = []
+    for i in range(shape_b[0]):
+        if str(list_calidad_data[i][0]) != "nan":
+            nlcad.append(list_calidad_data[:][i])
+    return nlcad, nlcd
 
 
-def orderByFolio(NLCAD, NLCD):
-    # Replica la funcion folioData pero para todos los folios
-    folioDB = []
-    lenA = len(NLCAD)  # Largo de la base de datos de revisado
-    for i in range(lenA):
-        toSearchA = str(NLCAD[i][0])  # Folio a ser comparado
-        toSearchA = toSearchA[0:5]
-        lenB = len(NLCD)  # Largo de la base de datos del compilado de produccion
-        folioData = []
-        for j in range(lenB):
-            toSearchB = str(NLCD[j][1])  # Folio a ser comparado
-            toSearchB = toSearchB[0:5]
-            if toSearchA == toSearchB:  # Comparacion
+def order_by_folio(nlcad, nlcd):
+    # Replica la funcion folio_data pero para todos los folios
+    folio_db = []
+    len_a = len(nlcad)  # Largo de la base de datos de revisado
+    for i in range(len_a):
+        to_search_a = str(nlcad[i][0])  # Folio a ser comparado
+        to_search_a = to_search_a[0:5]
+        len_b = len(nlcd)  # Largo de la base de datos del compilado de produccion
+        folio_data = []
+        for j in range(len_b):
+            to_search_b = str(nlcd[j][1])  # Folio a ser comparado
+            to_search_b = to_search_b[0:5]
+            if to_search_a == to_search_b:  # Comparacion
                 # print("==============" + str(NLCD[i][:]) + "==============")
-                folioData.append(NLCD[j][:])
-        folioDB.append(folioData)  # Crea una matriz de 3D donde:
+                folio_data.append(nlcd[j][:])
+        folio_db.append(folio_data)  # Crea una matriz de 3D donde:
         # La primera dim es para cada folio diferente
         # La segunda dim es para cada registro de ese folio
         # La tercera es para cada dato de ese registro
-    return (folioDB)
+    return folio_db
 
 
-def calAndPrintAllTimes(folioDB, NLCAD):  # Funcion que recolecta el resultado de varias
+def cal_and_print_all_times(folio_db, nlcad):  # Funcion que recolecta el resultado de varias
     # toma la base de datos tridimencional y busca en cada folio (primera dim)
     # En cada una manda a llamar la funcion de tiempo total por folio
     # para asi dar el tiempo total de maquina para cada folio
-    lenC = len(folioDB)  # Largo de la primera dim equivalente al numero de folios revisados
+    len_c = len(folio_db)  # Largo de la primera dim equivalente al numero de folios revisados
     # ask for cost
-    costL = float(input("Cual es el precio de la luz?"))
-    costW = float(input("Cual es el precio de el agua?"))
-    costG = float(input("Cuales el precio del gas?"))
+    cost_l = float(input("Cual es el precio de la luz?"))
+    cost_w = float(input("Cual es el precio de el agua?"))
+    cost_g = float(input("Cuales el precio del gas?"))
     times = []
-    for i in range(lenC):  # Para cada folio
-        folioToCalc = folioDB[i][:][:]  # Toma la info de cada folio
-        if len(folioDB[i][:][:]) > 0:
-            noFolio = str(folioDB[i][0][1])  # Toma el folio
-            noFolio = noFolio[0:5]
-            noFolio = int(noFolio)
-            metrosR = metrosRe(NLCAD, i)  # Metros totales recibidos en almacen
+    for i in range(len_c):  # Para cada folio
+        folio_to_calc = folio_db[i][:][:]  # Toma la info de cada folio
+        if len(folio_db[i][:][:]) > 0:
+            no_folio = str(folio_db[i][0][1])  # Toma el folio
+            no_folio = no_folio[0:5]
+            no_folio = int(no_folio)
+            metros_r = metros_re(nlcad, i)  # Metros totales recibidos en almacen
             # se envia el folio al que se desa calcular el tiempode cada maquina
-            tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama = timePFolio(folioToCalc)
+            tiempo_atm, tiempo_jet, tiempo_combi, tiempo_ht, tiempo_stork, tiempo_rama = time_p_folio(folio_to_calc)
             # Se toman los tiempos que devolvieron y se calcula la velocidad de produccion por maquina
-            velATM, velJet, velCom, velHT, velStork, velRama = timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi,
-                                                                            tiempoHT, tiempoStork,
-                                                                            tiempoRama)  # Tiempo de maquina por metro
+            vel_atm, vel_jet, vel_com, vel_ht, vel_stork, vel_rama = time_per_meter(metros_r, tiempo_atm, tiempo_jet,
+                                                                                    tiempo_combi,
+                                                                                    tiempo_ht, tiempo_stork,
+                                                                                    tiempo_rama)  # Tiempo de maquina
+            # por metro
             # se guarda todo en una lista
-            machineTimes = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama,
-                            metrosR, velATM, velJet, velCom, velHT, velStork, velRama]
+            machine_times = [no_folio, tiempo_atm, tiempo_jet, tiempo_combi, tiempo_ht, tiempo_stork, tiempo_rama,
+                             metros_r, vel_atm, vel_jet, vel_com, vel_ht, vel_stork, vel_rama]
             # Var to incert into csv
             # Call cost function
-            costATM, costJet, costCom, costHT, costStork, costRama = costomaquina(machineTimes, costL, costW, costG)
+            cost_atm, cost_jet, cost_com, cost_ht, cost_stork, cost_rama = cost_maquina(machine_times, cost_l, cost_w,
+                                                                                        cost_g)
             # Add cost per machine
-            machineCost = [noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama,
-                           metrosR, costATM, costJet, costCom, costHT, costStork, costRama, velATM, velJet, velCom,
-                           velHT, velStork, velRama]
+            machine_cost = [no_folio, tiempo_atm, tiempo_jet, tiempo_combi, tiempo_ht, tiempo_stork, tiempo_rama,
+                            metros_r, cost_atm, cost_jet, cost_com, cost_ht, cost_stork, cost_rama, vel_atm, vel_jet,
+                            vel_com,
+                            vel_ht, vel_stork, vel_rama]
             # Se agrega a una matriz con la forma folio-tiempos-velocidades
-            times.append(machineCost)
+            times.append(machine_cost)
     # al terminar de recorrer todos los folios se imprime en un archivo delimitados por comas
     with open('Cost.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(times)
         file.close()
-    return (machineTimes, times)
+    return machine_times, times
 
 
-def timePFolio(folioData):  # Calcula el tiempo de cada maquina para un folio
+def time_p_folio(folio_data):  # Calcula el tiempo de cada maquina para un folio
     # El argumento es la informacion de un folio, es decir, los procesos de cada folio dentro de la fabrica
     # ADD TO MACHINE
 
     # Rama
-    tiempoRama = 0
-    lenFD = len(folioData)  # tamaño de la lista con la informacion del folio
-    for i in range(lenFD):  # corre en el largo de la lista con la informacion del folio
-        if folioData[i][5] == "Rama Bruckner" or folioData[i][
-            5] == "Rama bruckner":  # compara la cadena para determinar si es de una maquina u otra
-            tiempoRama = tiempoRama + int(folioData[i][11])  # Suma los tiempos si concide la maquina
+    tiempo_rama = 0
+    len_fd = len(folio_data)  # tamaño de la lista con la informacion del folio
+    for i in range(len_fd):  # corre en el largo de la lista con la informacion del folio
+        if folio_data[i][5] == "Rama Bruckner" or folio_data[i][5] == "Rama bruckner":  # compara la cadena para
+            # determinar si es de una maquina u otra
+            tiempo_rama = tiempo_rama + int(folio_data[i][11])  # Suma los tiempos si concide la maquina
     print("=============================================")
-    print("El tiempo total en Rama es:" + str(tiempoRama) + " minutos ")  # Imprime el tiempo
+    print("El tiempo total en Rama es:" + str(tiempo_rama) + " minutos ")  # Imprime el tiempo
     print("=============================================")
 
     # Stork
-    tiempoStork = 0
-    lenFD = len(folioData)
-    for i in range(lenFD):
-        if folioData[i][5] == "Estampadora":
-            tiempoStork = tiempoStork + int(folioData[i][11])
+    tiempo_stork = 0
+    len_fd = len(folio_data)
+    for i in range(len_fd):
+        if folio_data[i][5] == "Estampadora":
+            tiempo_stork = tiempo_stork + int(folio_data[i][11])
     print("=============================================")
-    print("El tiempo total en Estampadora es:" + str(tiempoStork) + " minutos ")
+    print("El tiempo total en Estampadora es:" + str(tiempo_stork) + " minutos ")
     print("=============================================")
 
     # Jigger HT
-    tiempoHT = 0
-    lenFD = len(folioData)
-    for i in range(lenFD):
-        if folioData[i][5] == "Jigger HT":
-            tiempoHT = tiempoHT + int(folioData[i][11])
+    tiempo_ht = 0
+    len_fd = len(folio_data)
+    for i in range(len_fd):
+        if folio_data[i][5] == "Jigger HT":
+            tiempo_ht = tiempo_ht + int(folio_data[i][11])
     print("=============================================")
-    print("El tiempo total en Jigger HT es:" + str(tiempoHT) + " minutos ")
+    print("El tiempo total en Jigger HT es:" + str(tiempo_ht) + " minutos ")
     print("=============================================")
 
     # Jigger Combi
-    tiempoCombi = 0
-    lenFD = len(folioData)
-    for i in range(lenFD):
-        if folioData[i][5] == "Jigger Combi" or folioData[i][5] == "Jigger combi":
-            tiempoCombi = tiempoCombi + int(folioData[i][11])
+    tiempo_combi = 0
+    len_fd = len(folio_data)
+    for i in range(len_fd):
+        if folio_data[i][5] == "Jigger Combi" or folio_data[i][5] == "Jigger combi":
+            tiempo_combi = tiempo_combi + int(folio_data[i][11])
     print("=============================================")
-    print("El tiempo total en Jigger Combi es:" + str(tiempoCombi) + " minutos ")
+    print("El tiempo total en Jigger Combi es:" + str(tiempo_combi) + " minutos ")
     print("=============================================")
 
     # Jigger ATM
-    tiempoATM = 0
-    lenFD = len(folioData)
-    for i in range(lenFD):
-        if folioData[i][5] == "Jigger ATM":
-            tiempoATM = tiempoATM + int(folioData[i][11])
+    tiempo_atm = 0
+    len_fd = len(folio_data)
+    for i in range(len_fd):
+        if folio_data[i][5] == "Jigger ATM":
+            tiempo_atm = tiempo_atm + int(folio_data[i][11])
     print("=============================================")
-    print("El tiempo total en Jigger ATM es:" + str(tiempoCombi) + " minutos ")
+    print("El tiempo total en Jigger ATM es:" + str(tiempo_combi) + " minutos ")
     print("=============================================")
 
     # Jet
-    tiempoJet = 0
-    lenFD = len(folioData)
-    for i in range(lenFD):
-        if folioData[i][5] == "Jet 1" or folioData[i][5] == "Jet 2":
-            tiempoJet = tiempoJet + int(folioData[i][11])
+    tiempo_jet = 0
+    len_fd = len(folio_data)
+    for i in range(len_fd):
+        if folio_data[i][5] == "Jet 1" or folio_data[i][5] == "Jet 2":
+            tiempo_jet = tiempo_jet + int(folio_data[i][11])
     print("=============================================")
-    print("El tiempo total en Jet es:" + str(tiempoJet) + " minutos ")
+    print("El tiempo total en Jet es:" + str(tiempo_jet) + " minutos ")
     print("=============================================")
 
-    return (tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama)
+    return (tiempo_atm, tiempo_jet, tiempo_combi, tiempo_ht, tiempo_stork, tiempo_rama)
 
 
-def timePerMeter(metrosR, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama):
-    if tiempoATM > 0:
-        velATM = metrosR / tiempoATM
+def time_per_meter(metros_r, tiempo_atm, tiempo_jet, tiempo_combi, tiempo_ht, tiempo_stork, tiempo_rama):
+    if tiempo_atm > 0:
+        vel_atm = metros_r / tiempo_atm
     else:
-        velATM = 0
-    if tiempoJet > 0:
-        velJet = metrosR / tiempoJet
+        vel_atm = 0
+    if tiempo_jet > 0:
+        vel_jet = metros_r / tiempo_jet
     else:
-        velJet = 0
-    if tiempoCombi > 0:
-        velCom = metrosR / tiempoCombi
+        vel_jet = 0
+    if tiempo_combi > 0:
+        vel_com = metros_r / tiempo_combi
     else:
-        velCom = 0
-    if tiempoHT > 0:
-        velHT = metrosR / tiempoHT
+        vel_com = 0
+    if tiempo_ht > 0:
+        vel_ht = metros_r / tiempo_ht
     else:
-        velHT = 0
-    if tiempoStork > 0:
-        velStork = metrosR / tiempoStork
+        vel_ht = 0
+    if tiempo_stork > 0:
+        vel_stork = metros_r / tiempo_stork
     else:
-        velStork = 0
-    if tiempoRama > 0:
-        velRama = metrosR / tiempoRama
+        vel_stork = 0
+    if tiempo_rama > 0:
+        vel_rama = metros_r / tiempo_rama
     else:
-        velRama = 0
-    return (velATM, velJet, velCom, velHT, velStork, velRama)
+        vel_rama = 0
+    return vel_atm, vel_jet, vel_com, vel_ht, vel_stork, vel_rama
 
 
-def metrosRe(NLCAD, i):
-    metrosR = NLCAD[i][3]
-    return (metrosR)
+def metros_re(nlcad, i):
+    metros_r = nlcad[i][3]
+    return metros_r
 
 
-def costomaquina(machineTimes, costL, costW, costG):
+def cost_maquina(machine_times, cost_l, cost_w, cost_g):
     # noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama
 
-    costPminATM, costPminJet, costPminCom, costPminHT, costPminStork, costPminRama = consumosMaquina(
-        costW, costL, costG)
-    # costPminElitex = input()
+    cost_p_min_atm, cost_p_min_jet, cost_p_min_com, cost_p_min_ht, cost_p_min_stork, cost_p_min_rama = consumos_maquina(
+        cost_w, cost_l, cost_g)
+
     # costElitex = machineTimes[][]
-    costATM = machineTimes[1] * costPminATM
-    costJet = machineTimes[2] * costPminJet
-    costCom = machineTimes[3] * costPminCom
-    costHT = machineTimes[4] * costPminHT
-    costStork = machineTimes[5] * costPminStork
-    costRama = machineTimes[6] * costPminRama
+    cost_atm = machine_times[1] * cost_p_min_atm
+    cost_jet = machine_times[2] * cost_p_min_jet
+    cost_com = machine_times[3] * cost_p_min_com
+    cost_ht = machine_times[4] * cost_p_min_ht
+    cost_stork = machine_times[5] * cost_p_min_stork
+    cost_rama = machine_times[6] * cost_p_min_rama
 
-    return (costATM, costJet, costCom, costHT, costStork, costRama)
+    return cost_atm, cost_jet, cost_com, cost_ht, cost_stork, cost_rama
 
 
-def consumosMaquina(costW, costL, costG):
+def consumos_maquina(cost_w, cost_l, cost_g):
+    cost_p_min_atm = (0.0453334 * cost_l) + (0 * cost_w) + (0.1605555555555556 * cost_g)  #
+    cost_p_min_jet = (0.3956667 * cost_l) + (0 * cost_w) + (0.1805555555555556 * cost_g)  #
+    cost_p_min_com = (0.3483334 * cost_l) + (0 * cost_w) + (0.40625 * cost_g)  #
+    cost_p_min_ht = (0.156667 * cost_l) + (0 * cost_w) + (0.3159722222222222 * cost_g)  #
+    cost_p_min_stork = (0.62 * cost_l) + (0 * cost_w) + (2.03125 * cost_g)  #
+    cost_p_min_rama = (0.870066855668766 * cost_l) + (0 * cost_w) + (0.7899305555555556 * cost_g)  #
+    return cost_p_min_atm, cost_p_min_jet, cost_p_min_com, cost_p_min_ht, cost_p_min_stork, cost_p_min_rama
 
-    costPminATM = (0.0453334 * costL) + (0 * costW) + (0.1605555555555556 * costG)#
-    costPminJet = (0.3956667 * costL) + (0 * costW) + (0.1805555555555556 * costG)#
-    costPminCom = (0.3483334 * costL) + (0 * costW) + (0.40625* costG)#
-    costPminHT = (0.156667 * costL) + (0 * costW) + (0.3159722222222222 * costG)#
-    costPminStork = (0.62 * costL) + (0 * costW) + (2.03125 * costG)#
-    costPminRama = (0.870066855668766 * costL) + (0 * costW) + (0.7899305555555556 * costG)#
-    return (costPminATM, costPminJet, costPminCom, costPminHT, costPminStork, costPminRama)
 
 def general():
-    compiladoData = pd.read_csv('Gastos_generales.csv',
+    compilado_data = pd.read_csv('Gastos_generales.csv',
                                 encoding='latin1')  # Lee el archivo de gastos generales
-    shapeA = compiladoData.shape  # Dimencion de la base de datos
+    shapeA = compilado_data.shape  # Dimencion de la base de datos
 
-    ListCompiladoData = compiladoData.values.tolist()
+    list_compilado_data = compilado_data.values.tolist()
+    #   Machine Net time.
+    #   General divided by Net time.
+    #   Net time per machine.
+    #   Machine cost divided by Net time
