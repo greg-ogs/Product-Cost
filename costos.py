@@ -218,12 +218,12 @@ def costomaquina(machineTimes, costL, costW, costG):
 
 def consumosMaquina(costW, costL, costG):
 
-    costPminATM = (0.0453334 * costL) + (0 * costW) + (0.0846354166666667 * costG)
-    costPminJet = (0.3956667 * costL) + (0 * costW) + (0.1410590277777778 * costG)
-    costPminCom = (0.3483334 * costL) + (0 * costW) + (0.2821180555555555 * costG)
-    costPminHT = (0.156667 * costL) + (0 * costW) + (0.1974826388888889 * costG)
-    costPminStork = (0.62 * costL) + (0 * costW) + (0.9375 * costG)
-    costPminRama = (0.870066855668766 * costL) + (0 * costW) + (0.6770833333333332 * costG)
+    costPminATM = (0.0453334 * costL) + (0 * costW) + (0.1605555555555556 * costG)#
+    costPminJet = (0.3956667 * costL) + (0 * costW) + (0.1805555555555556 * costG)#
+    costPminCom = (0.3483334 * costL) + (0 * costW) + (0.40625* costG)#
+    costPminHT = (0.156667 * costL) + (0 * costW) + (0.3159722222222222 * costG)#
+    costPminStork = (0.62 * costL) + (0 * costW) + (2.03125 * costG)#
+    costPminRama = (0.870066855668766 * costL) + (0 * costW) + (0.7899305555555556 * costG)#
     return (costPminATM, costPminJet, costPminCom, costPminHT, costPminStork, costPminRama)
 
 def general():
