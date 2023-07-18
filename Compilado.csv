@@ -1,0 +1,317 @@
+fecha,folio,codigoevento,evento,tipoevento,Maquina,codigotela,tela,metros,hrainicio,hrafin,tiempototal,quemador,turbina,operador,supervisor
+26/06/2023,na,1100,Encender maquina,IMPRODUCTIVO,Rama Bruckner,,,,07:00:00 a. m.,08:45:00 a. m.,105,0,0,Hazael,Samuel
+26/06/2023,27553,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,75,PD 75 gsm,410,08:45:00 a. m.,09:14:09 a. m.,29,0,0,Hazael,Samuel
+26/06/2023,27553,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,09:14:09 a. m.,09:18:58 a. m.,5,0,0,Hazael,Samuel
+26/06/2023,27622,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,1376,09:18:58 a. m.,10:15:10 a. m.,56,0,0,Hazael,Samuel
+26/06/2023,27622,1122,Falta de tela,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,10:15:10 a. m.,10:40:38 a. m.,25,0,0,Hazael,Samuel
+26/06/2023,27624,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,1253,10:40:38 a. m.,11:18:48 a. m.,38,0,0,Hazael,Samuel
+26/06/2023,27624,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,11:18:48 a. m.,11:34:26 a. m.,16,0,0,Hazael,Samuel
+26/06/2023,27625,211,Teñido Carton claro,PRODUCTIVO,Rama Bruckner,2,Tropical ,2074,11:34:26 a. m.,01:51:15 p. m.,137,0,0,Hazael,Samuel
+26/06/2023,27625,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,01:51:15 p. m.,02:10:38 p. m.,19,0,0,Hazael,Samuel
+26/06/2023,27626,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,2,Tropical ,2145,02:10:38 p. m.,03:13:01 p. m.,62,0,0,Hazael,Samuel
+26/06/2023,27626,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,03:13:01 p. m.,03:28:35 p. m.,16,0,0,Hazael,Samuel
+26/06/2023,27623,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,3032,03:28:35 p. m.,04:46:02 p. m.,77,0,0,Hazael,Samuel
+26/06/2023,27623,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,04:46:02 p. m.,05:07:17 p. m.,21,0,0,Hazael,Samuel
+26/06/2023,27626,211,Teñido Carton claro,PRODUCTIVO,Rama Bruckner,0,INGRESE TELA,1710,05:07:17 p. m.,06:56:08 p. m.,109,0,0,Hazael,Samuel
+26/06/2023,27626,211,Teñido Carton claro,PRODUCTIVO,Rama Bruckner,2,Tropical ,407,07:00:00 p. m.,07:24:00 p. m.,24,1,1,Rafael,Genaro
+26/06/2023,27626,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,07:24:00 p. m.,07:27:00 p. m.,3,1,1,Rafael,Genaro
+26/06/2023,27553,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,75,PD 75 gsm,2452,07:27:00 p. m.,09:05:00 p. m.,98,1,1,Rafael,Genaro
+26/06/2023,27553,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,09:05:00 p. m.,09:08:00 p. m.,3,1,1,Rafael,Genaro
+26/06/2023,27622,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,2708,09:08:00 p. m.,10:55:00 p. m.,107,1,1,Rafael,Genaro
+26/06/2023,27553,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,75,PD 75 gsm,172,10:55:00 p. m.,11:02:00 p. m.,7,1,1,Rafael,Genaro
+26/06/2023,27553,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,11:02:00 p. m.,11:05:00 p. m.,3,1,1,Rafael,Genaro
+26/06/2023,27624,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,95,11:05:00 p. m.,11:09:00 p. m.,4,1,1,Rafael,Genaro
+26/06/2023,27624,1123,Falla electrica CFE,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,11:09:00 p. m.,11:17:00 p. m.,8,1,1,Rafael,Genaro
+27/06/2023,27624,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,1200,11:17:00 p. m.,12:05:00 a. m.,48,1,1,Rafael,Genaro
+27/06/2023,27622,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,140,12:05:00 a. m.,12:09:00 a. m.,4,1,1,Rafael,Genaro
+27/06/2023,27622,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,12:09:00 a. m.,12:12:00 a. m.,3,1,1,Rafael,Genaro
+27/06/2023,27623,225,Teñido de piel de durazno,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,3155,12:12:00 a. m.,02:48:00 a. m.,156,1,1,Rafael,Genaro
+27/06/2023,27623,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,02:48:00 a. m.,02:55:00 a. m.,7,1,1,Rafael,Genaro
+27/06/2023,27627,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,2,Tropical ,1964,02:55:00 a. m.,03:50:00 a. m.,55,1,1,Rafael,Genaro
+27/06/2023,27627,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,03:50:00 a. m.,03:55:00 a. m.,5,1,1,Rafael,Genaro
+27/06/2023,27628,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,170,Tropical 170,2001,03:55:00 a. m.,04:52:00 a. m.,57,1,1,Rafael,Genaro
+27/06/2023,27628,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,04:52:00 a. m.,04:58:00 a. m.,6,1,1,Rafael,Genaro
+27/06/2023,27628,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,170,Tropical 170,2012,04:58:00 a. m.,07:00:00 a. m.,122,1,1,Rafael,Genaro
+27/06/2023,na,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,07:00:00 a. m.,07:27:23 a. m.,27,1,1,Rafael,Genaro
+27/06/2023,27630,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,170,Tropical 170,1853,07:27:23 a. m.,08:31:10 a. m.,64,1,1,Hazael,Samuel
+27/06/2023,27630,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,08:31:10 a. m.,08:48:18 a. m.,17,1,1,Hazael,Samuel
+27/06/2023,27630,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,170,Tropical 170,1876,08:48:18 a. m.,10:52:19 a. m.,124,1,1,Hazael,Samuel
+27/06/2023,27630,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,10:52:19 a. m.,11:11:56 a. m.,20,1,1,Hazael,Samuel
+27/06/2023,27631,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,542,11:11:56 a. m.,11:41:46 a. m.,30,1,1,Hazael,Samuel
+27/06/2023,27631,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,11:41:46 a. m.,11:50:04 a. m.,8,1,1,Hazael,Samuel
+27/06/2023,27618,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,1641,11:50:04 a. m.,12:43:46 p. m.,54,1,1,Hazael,Samuel
+27/06/2023,27618,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,12:43:46 p. m.,12:55:52 p. m.,12,1,1,Hazael,Samuel
+27/06/2023,27627,237,Teñido carton medio,PRODUCTIVO,Rama Bruckner,2,Tropical ,115,12:55:52 p. m.,01:05:34 p. m.,10,1,1,Hazael,Samuel
+27/06/2023,27627,1104,Color fuera de tono impregnado ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,01:05:34 p. m.,01:34:00 p. m.,28,1,1,Hazael,Samuel
+27/06/2023,27627,237,Teñido carton medio,PRODUCTIVO,Rama Bruckner,2,Tropical ,1815,01:34:00 p. m.,03:32:51 p. m.,119,1,1,Hazael,Samuel
+27/06/2023,27627,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,03:32:51 p. m.,03:53:28 p. m.,21,1,1,Hazael,Samuel
+27/06/2023,27569,239,Teñido carton oscuro ,PRODUCTIVO,Rama Bruckner,2,Tropical ,1925,03:53:28 p. m.,06:13:22 p. m.,140,1,1,Hazael,Samuel
+27/06/2023,27569,1101,Falla mecánica Rama,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,07:00:00 p. m.,07:20:00 p. m.,20,1,1,Rafael,Genaro
+27/06/2023,27569,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,2,Tropical ,351,07:20:00 p. m.,07:30:00 p. m.,10,1,1,Rafael,Genaro
+27/06/2023,27569,1101,Falla mecánica Rama,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,07:30:00 p. m.,08:23:00 p. m.,53,1,1,Rafael,Genaro
+27/06/2023,27569,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,2,Tropical ,2002,08:23:00 p. m.,09:19:00 p. m.,56,1,1,Rafael,Genaro
+27/06/2023,27569,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,09:19:00 p. m.,09:23:00 p. m.,4,1,1,Rafael,Genaro
+27/06/2023,27569,239,Teñido carton oscuro ,PRODUCTIVO,Rama Bruckner,2,Tropical ,1822,09:23:00 p. m.,11:16:00 p. m.,113,1,1,Rafael,Genaro
+27/06/2023,27569,1112,Revisar tela ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,11:16:00 p. m.,11:28:00 p. m.,12,1,1,Rafael,Genaro
+28/06/2023,27569,239,Teñido carton oscuro ,PRODUCTIVO,Rama Bruckner,2,Tropical ,494,11:28:00 p. m.,11:59:00 p. m.,31,1,1,Rafael,Genaro
+28/06/2023,27569,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,11:59:00 p. m.,12:09:00 a. m.,10,1,1,Rafael,Genaro
+28/06/2023,24877,1121,Reproceso,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,281,12:09:00 a. m.,12:26:00 a. m.,17,1,1,Rafael,Genaro
+28/06/2023,27630,239,Teñido carton oscuro ,PRODUCTIVO,Rama Bruckner,2,Tropical ,66,12:26:00 a. m.,12:30:00 a. m.,4,1,1,Rafael,Genaro
+28/06/2023,27613,239,Teñido carton oscuro ,PRODUCTIVO,Rama Bruckner,170,Tropical 170,1337,12:30:00 a. m.,01:53:00 a. m.,83,1,1,Rafael,Genaro
+28/06/2023,27613,1112,Revisar tela ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,01:53:00 a. m.,02:03:00 a. m.,10,1,1,Rafael,Genaro
+28/06/2023,27613,239,Teñido carton oscuro ,PRODUCTIVO,Rama Bruckner,170,Tropical 170,475,02:03:00 a. m.,02:32:00 a. m.,29,1,1,Rafael,Genaro
+28/06/2023,27613,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,02:32:00 a. m.,02:42:00 a. m.,10,1,1,Rafael,Genaro
+28/06/2023,27637,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,900,Maquila,902,02:42:00 a. m.,03:38:00 a. m.,56,1,1,Rafael,Genaro
+28/06/2023,27637,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,03:38:00 a. m.,03:51:00 a. m.,13,1,1,Rafael,Genaro
+28/06/2023,27629,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,2,Tropical ,2000,03:51:00 a. m.,04:49:00 a. m.,58,1,1,Rafael,Genaro
+28/06/2023,27629,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,04:49:00 a. m.,04:58:00 a. m.,9,1,1,Rafael,Genaro
+28/06/2023,27638,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,75,PD 75 gsm,2051,04:58:00 a. m.,06:00:00 a. m.,62,1,1,Rafael,Genaro
+28/06/2023,27639,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,75,PD 75 gsm,2043,06:00:00 a. m.,07:00:00 a. m.,60,1,1,Rafael,Genaro
+28/06/2023,27639,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,07:00:00 a. m.,07:16:13 a. m.,16,1,1,Hazael,Samuel
+28/06/2023,27629,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,2,Tropical ,303,07:16:13 a. m.,07:49:17 a. m.,33,1,1,Hazael,Samuel
+28/06/2023,27629,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,07:49:17 a. m.,08:25:32 a. m.,36,1,1,Hazael,Samuel
+28/06/2023,27631,225,Teñido de piel de durazno,PRODUCTIVO,Rama Bruckner,85,PD 85 gsm,534,08:25:32 a. m.,09:06:27 a. m.,41,1,1,Hazael,Samuel
+28/06/2023,27631,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,09:06:27 a. m.,09:17:14 a. m.,11,1,1,Hazael,Samuel
+28/06/2023,27629,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,2,Tropical ,1692,09:17:14 a. m.,11:09:36 a. m.,112,1,1,Hazael,Samuel
+28/06/2023,27629,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,INGRESE TELA,,11:09:36 a. m.,11:25:21 a. m.,16,1,1,Hazael,Samuel
+28/06/2023,27641,201,Termofijado Crudo para Estampado ,PRODUCTIVO,Rama Bruckner,1,Pongee,2560,11:25:21 a. m.,12:32:35 p. m.,67,1,1,Hazael,Samuel
+26/06/2023,NA,1208,Preparación de diseño Estampado,IMPRODUCTIVO,Estampadora,,,,07:00:00 a. m.,08:56:33 a. m.,117,0,0,Jose Maria,Juan
+26/06/2023,NA,1220,Falta de tela,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,08:56:33 a. m.,09:58:38 a. m.,62,0,0,Jose Maria,Juan
+26/06/2023,27553,111,Estampado 25m/min,PRODUCTIVO,Estampadora,75,PD 75 gsm,2513,09:58:38 a. m.,11:44:15 a. m.,106,0,0,Jose Maria,Juan
+26/06/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,11:44:15 a. m.,12:40:40 p. m.,56,0,0,Jose Maria,Juan
+26/06/2023,NA,1219,Costura Rota,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,12:40:40 p. m.,01:38:58 p. m.,58,0,0,Jose Maria,Juan
+26/06/2023,27622,112,Estampado 30m/min,PRODUCTIVO,Estampadora,85,PD 85 gsm,2740,01:38:58 p. m.,03:36:58 p. m.,118,0,0,Jose Maria,Juan
+26/06/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,03:36:58 p. m.,03:55:55 p. m.,19,0,0,Jose Maria,Juan
+26/06/2023,27624,114,Estampado 40m/min,PRODUCTIVO,Estampadora,0,INGRESE TELA,,03:55:55 p. m.,03:59:51 p. m.,4,0,0,Jose Maria,Juan
+26/06/2023,27624,114,Estampado 40m/min,PRODUCTIVO,Estampadora,85,PD 85 gsm,2235,03:59:51 p. m.,04:26:45 p. m.,27,0,0,Jose Maria,Juan
+26/06/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,04:26:45 p. m.,05:00:35 p. m.,34,0,0,Jose Maria,Juan
+26/06/2023,27623,114,Estampado 40m/min,PRODUCTIVO,Estampadora,85,PD 85 gsm,2990,05:00:35 p. m.,06:32:09 p. m.,92,0,0,Jose Maria,Juan
+26/06/2023,NA,1206,Lavado de rasqueta y Cilindros,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,06:32:09 p. m.,07:00:02 p. m.,28,0,0,Jose Maria,Juan
+27/06/2023,NA,1219,Costura Rota,IMPRODUCTIVO,Estampadora,,,,07:00:00 a. m.,12:33:42 p. m.,334,0,0,Jose Maria,Juan
+27/06/2023,27608,113,Estampado 35m/min,PRODUCTIVO,Estampadora,1,Pongee,2928,12:33:42 p. m.,02:43:04 p. m.,129,0,0,Jose Maria,Juan
+27/06/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,02:43:04 p. m.,03:22:06 p. m.,39,0,0,Jose Maria,Juan
+27/06/2023,27610,113,Estampado 35m/min,PRODUCTIVO,Estampadora,1,Pongee,2990,03:22:06 p. m.,04:45:20 p. m.,83,0,0,Jose Maria,Juan
+27/06/2023,NA,1207,Cambio de variante,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,04:45:20 p. m.,05:03:27 p. m.,18,0,0,Jose Maria,Juan
+27/06/2023,27611,113,Estampado 35m/min,PRODUCTIVO,Estampadora,1,Pongee,2901,05:03:27 p. m.,06:33:07 p. m.,90,0,0,Jose Maria,Juan
+28/06/2023,NA,1206,Lavado de rasqueta y Cilindros,IMPRODUCTIVO,Estampadora,0,INGRESE TELA,,06:33:07 p. m.,07:07:33 p. m.,34,0,0,Jose Maria,Juan
+28/06/2023,NA,1208,Preparación de diseño Estampado,IMPRODUCTIVO,Estampadora,,,,07:00:00 a. m.,10:53:51 a. m.,234,0,0,Jose Maria,Juan
+28/06/2023,27638,111,Estampado 25m/min,PRODUCTIVO,Estampadora,75,PD 75 gsm,2029,10:53:51 a. m.,12:01:53 p. m.,68,0,0,Jose Maria,Juan
+26/06/2023,27628,1300,Cargar Jigger HT,IMPRODUCTIVO,Jigger HT,170,Tropical 170,"2,028",08:20:00 p. m.,08:40:00 p. m.,20,0,0,Khristhian,Genaro
+26/06/2023,27628,300,Lavar Poliéster ,PRODUCTIVO,Jigger HT,170,Tropical 170,"2,028",08:40:00 p. m.,09:35:00 p. m.,55,0,0,Khristhian,Genaro
+26/06/2023,27628,315,Enjuague,PRODUCTIVO,Jigger HT,170,Tropical 170,"2,028",09:35:00 p. m.,10:35:00 p. m.,60,0,0,Khristhian,Genaro
+27/06/2023,27628,301,Curva de agotamiento Pes,PRODUCTIVO,Jigger HT,170,Tropical 170,"2,028",10:35:00 p. m.,12:35:00 a. m.,120,0,0,Khristhian,Genaro
+27/06/2023,27628,302,Agotamiento Pes,PRODUCTIVO,Jigger HT,170,Tropical 170,"2,028",12:35:00 a. m.,01:45:00 a. m.,70,0,0,Khristhian,Genaro
+27/06/2023,27628,303,Enfriado de 130ºC a 80ºC Pes,PRODUCTIVO,Jigger HT,170,Tropical 170,"2,028",01:45:00 a. m.,02:10:00 a. m.,25,0,0,Khristhian,Genaro
+27/06/2023,27628,315,Enjuague,PRODUCTIVO,Jigger HT,170,Tropical 170,"2,028",02:10:00 a. m.,03:00:00 a. m.,50,0,0,Khristhian,Genaro
+27/06/2023,27628,1301,Descargar Jigger HT,IMPRODUCTIVO,Jigger HT,170,Tropical 170,"2,028",03:00:00 a. m.,04:00:00 a. m.,60,0,0,Khristhian,Genaro
+27/06/2023,27629,1300,Cargar Jigger HT,IMPRODUCTIVO,Jigger HT,2,Tropical ,"2,048",04:00:00 a. m.,04:35:00 a. m.,35,0,0,Khristhian,Genaro
+27/06/2023,27629,300,Lavar Poliéster ,PRODUCTIVO,Jigger HT,2,Tropical ,"2,048",04:35:00 a. m.,05:25:00 a. m.,50,0,0,Khristhian,Genaro
+27/06/2023,27629,315,Enjuague,PRODUCTIVO,Jigger HT,2,Tropical ,"2,048",05:25:00 a. m.,06:15:00 a. m.,50,0,0,Khristhian,Genaro
+27/06/2023,N/A,1314,falta de formula ,IMPRODUCTIVO,Jigger HT,0,INGRESE TELA,N/A,06:15:00 a. m.,07:00:00 a. m.,45,0,0,Khristhian,Genaro
+27/06/2023,27446,1400,Cargar Jigger ATM,IMPRODUCTIVO,Jigger ATM,903,Maquila PESCO,520,02:10:00 a. m.,02:27:00 a. m.,17,0,0,Khristhian,Genaro
+27/06/2023,27446,1415,Reproceso,IMPRODUCTIVO,Jigger ATM,903,Maquila PESCO,520,02:27:00 a. m.,04:00:00 a. m.,93,0,0,Khristhian,Genaro
+27/06/2023,N/A,1511,Lavado Combi Jigger,IMPRODUCTIVO,Jigger Combi,0,INGRESE TELA,N/A,09:50:00 p. m.,12:20:00 a. m.,150,0,0,Khristhian,Genaro
+27/06/2023,27631,1500,Cargar Combi Jigger,IMPRODUCTIVO,Jigger Combi,85,PD 85 gsm,493,01:50:00 a. m.,02:00:00 a. m.,10,0,0,Khristhian,Genaro
+27/06/2023,27631,500,Lavar Poliéster ,PRODUCTIVO,Jigger Combi,85,PD 85 gsm,493,02:00:00 a. m.,02:10:00 a. m.,10,0,0,Khristhian,Genaro
+27/06/2023,27631,522,Enjuague,PRODUCTIVO,Jigger Combi,85,PD 85 gsm,493,02:10:00 a. m.,02:31:00 a. m.,21,0,0,Khristhian,Genaro
+27/06/2023,27631,501,Curva de agotamiento Pes,PRODUCTIVO,Jigger Combi,85,PD 85 gsm,493,02:31:00 a. m.,04:15:00 a. m.,104,0,0,Khristhian,Genaro
+27/06/2023,27631,502,Agotamiento Pes,PRODUCTIVO,Jigger Combi,85,PD 85 gsm,493,04:15:00 a. m.,04:49:00 a. m.,34,0,0,Khristhian,Genaro
+27/06/2023,27631,503,Enfriado de 130ºC a 80ºC Pes,PRODUCTIVO,Jigger Combi,85,PD 85 gsm,493,04:49:00 a. m.,05:15:00 a. m.,26,0,0,Khristhian,Genaro
+27/06/2023,27631,504,Reductivo Pes,PRODUCTIVO,Jigger Combi,85,PD 85 gsm,493,05:15:00 a. m.,05:40:00 a. m.,25,0,0,Khristhian,Genaro
+27/06/2023,27631,522,Enjuague,PRODUCTIVO,Jigger Combi,85,PD 85 gsm,493,05:40:00 a. m.,06:05:00 a. m.,25,0,0,Khristhian,Genaro
+26/06/2023,27630,702,Agotamiento Pes,PRODUCTIVO,Jet 1,170,Tropical 170,"2,048",07:00:00 p. m.,07:33:00 p. m.,33,0,0,Khristhian,Genaro
+26/06/2023,27630,703,Enfriado de 130ºC a 80ºC Pes,PRODUCTIVO,Jet 1,2,Tropical ,"2,048",07:33:00 p. m.,09:20:00 p. m.,107,0,0,Khristhian,Genaro
+26/06/2023,27630,704,Reductivo Pes,PRODUCTIVO,Jet 1,2,Tropical ,"2,048",09:20:00 p. m.,10:00:00 p. m.,40,0,0,Khristhian,Genaro
+26/06/2023,27630,720,Neutralizar reactivo,PRODUCTIVO,Jet 1,2,Tropical ,"2,048",10:00:00 p. m.,10:45:00 p. m.,45,0,0,Khristhian,Genaro
+27/06/2023,27630,1701,Descargar Jet,IMPRODUCTIVO,Jet 1,2,Tropical ,"2,048",10:45:00 p. m.,12:05:00 a. m.,80,0,0,Khristhian,Genaro
+27/06/2023,27633,1700,Cargar Jet,IMPRODUCTIVO,Jet 1,170,Tropical 170,"2,058",06:00:00 a. m.,07:00:00 a. m.,60,0,0,Khristhian,Genaro
+03/07/2023,27647,1100,Encender maquina,IMPRODUCTIVO,Rama Bruckner,,PD 75 gsm,,07:00:00 a. m.,08:40:43 a. m.,101,0,0,Hazael,Samuel
+03/07/2023,27647,225,Teñido de piel de durazno,PRODUCTIVO,Rama Bruckner,075,PD 75 gsm,1020,08:40:43 a. m.,09:57:51 a. m.,77,0,0,Hazael,Samuel
+03/07/2023,27647,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,09:57:51 a. m.,10:08:32 a. m.,11,0,0,Hazael,Samuel
+03/07/2023,27648,225,Teñido de piel de durazno,PRODUCTIVO,Rama Bruckner,075,PD 75 gsm,1140,10:08:32 a. m.,11:25:39 a. m.,77,0,0,Hazael,Samuel
+03/07/2023,27648,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,11:25:39 a. m.,11:38:36 a. m.,13,0,0,Hazael,Samuel
+03/07/2023,27655,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,002,Tropical ,2185,11:38:36 a. m.,12:45:25 p. m.,67,0,0,Hazael,Samuel
+03/07/2023,27656,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,002,Tropical ,2073,12:45:25 p. m.,01:40:12 p. m.,55,1,1,Hazael,Samuel
+03/07/2023,27656,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,01:40:12 p. m.,01:48:47 p. m.,9,1,1,Hazael,Samuel
+03/07/2023,27656,237,Teñido carton medio,PRODUCTIVO,Rama Bruckner,002,Tropical ,158,01:48:47 p. m.,02:00:52 p. m.,12,1,1,Hazael,Samuel
+03/07/2023,27656,1104,Color fuera de tono impregnado ,IMPRODUCTIVO,Rama Bruckner,0,,,02:00:52 p. m.,02:26:23 p. m.,26,1,1,Hazael,Samuel
+03/07/2023,27656,237,Teñido carton medio,PRODUCTIVO,Rama Bruckner,002,Tropical ,1880,02:26:23 p. m.,04:25:56 p. m.,120,1,1,Hazael,Samuel
+03/07/2023,27656,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,04:25:56 p. m.,04:41:34 p. m.,16,1,1,Hazael,Samuel
+03/07/2023,27655,239,Teñido carton oscuro ,PRODUCTIVO,Rama Bruckner,002,Tropical ,2165,04:41:34 p. m.,07:04:38 p. m.,143,1,1,Hazael,Samuel
+03/07/2023,27633,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,,,,07:00:00 p. m.,07:10:00 p. m.,10,1,1,Rafael,Genaro
+03/07/2023,27633,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,170,Tropical 170,762,07:10:00 p. m.,07:35:00 p. m.,25,1,1,Rafael,Genaro
+03/07/2023,27633,1123,Falla electrica CFE,IMPRODUCTIVO,Rama Bruckner,0,,,07:35:00 p. m.,07:59:00 p. m.,24,1,1,Rafael,Genaro
+03/07/2023,27633,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,170,Tropical 170,627,07:59:00 p. m.,08:20:00 p. m.,21,1,1,Rafael,Genaro
+03/07/2023,27633,1112,Revisar tela ,IMPRODUCTIVO,Rama Bruckner,0,,,08:20:00 p. m.,08:34:00 p. m.,14,1,1,Rafael,Genaro
+03/07/2023,27633,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,170,Tropical 170,459,08:34:00 p. m.,08:49:00 p. m.,15,1,1,Rafael,Genaro
+03/07/2023,27633,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,08:49:00 p. m.,08:53:00 p. m.,4,1,1,Rafael,Genaro
+03/07/2023,27633,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,170,Tropical 170,1931,08:53:00 p. m.,10:53:00 p. m.,120,1,1,Rafael,Genaro
+03/07/2023,27633,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,10:53:00 p. m.,10:56:00 p. m.,3,1,1,Rafael,Genaro
+04/07/2023,27653,203,Termofijado Estampado Oscuro,PRODUCTIVO,Rama Bruckner,001,Pongee,2989,10:56:00 p. m.,12:54:00 a. m.,118,1,1,Rafael,Genaro
+04/07/2023,27654,202,Termofijado Estampado Claro,PRODUCTIVO,Rama Bruckner,001,Pongee,3000,12:54:00 a. m.,02:53:00 a. m.,119,1,1,Rafael,Genaro
+04/07/2023,27652,202,Termofijado Estampado Claro,PRODUCTIVO,Rama Bruckner,001,Pongee,3203,02:53:00 a. m.,05:00:00 a. m.,127,1,1,Rafael,Genaro
+04/07/2023,27652,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,05:00:00 a. m.,05:04:00 a. m.,4,1,1,Rafael,Genaro
+04/07/2023,27659,225,Teñido de piel de durazno,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,2098,05:04:00 a. m.,06:48:00 a. m.,104,1,1,Rafael,Genaro
+04/07/2023,27659,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,06:48:00 a. m.,06:51:00 a. m.,3,1,1,Rafael,Genaro
+04/07/2023,27660,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,317,06:51:00 a. m.,07:00:00 a. m.,9,1,1,Rafael,Genaro
+04/07/2023,27660,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,1731,07:00:00 a. m.,07:51:58 a. m.,52,0,0,Hazael,Samuel
+04/07/2023,27660,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,07:51:58 a. m.,08:02:28 a. m.,10,0,0,Hazael,Samuel
+04/07/2023,27651,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,1666,08:02:28 a. m.,08:55:56 a. m.,53,0,0,Hazael,Samuel
+04/07/2023,27651,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,08:55:56 a. m.,09:07:40 a. m.,12,0,0,Hazael,Samuel
+04/07/2023,27657,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,2046,09:07:40 a. m.,10:05:54 a. m.,58,0,0,Hazael,Samuel
+04/07/2023,27657,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,10:05:54 a. m.,10:11:20 a. m.,5,0,0,Hazael,Samuel
+04/07/2023,27658,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,2082,10:11:20 a. m.,11:09:50 a. m.,58,0,0,Hazael,Samuel
+04/07/2023,27658,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,11:09:50 a. m.,11:18:39 a. m.,9,0,0,Hazael,Samuel
+04/07/2023,27661,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,002,Tropical ,2061,11:18:39 a. m.,12:18:33 p. m.,60,0,0,Hazael,Samuel
+04/07/2023,27661,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,12:18:33 p. m.,12:31:22 p. m.,13,0,0,Hazael,Samuel
+04/07/2023,27661,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,002,Tropical ,2058,12:31:22 p. m.,02:35:19 p. m.,124,0,0,Hazael,Samuel
+04/07/2023,27661,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,02:35:19 p. m.,02:50:27 p. m.,15,0,0,Hazael,Samuel
+04/07/2023,na,1113,Pruebas Rama,IMPRODUCTIVO,Rama Bruckner,0,,,02:50:27 p. m.,03:00:30 p. m.,10,0,0,Hazael,Samuel
+04/07/2023,27661,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,03:00:30 p. m.,03:21:16 p. m.,21,0,0,Hazael,Samuel
+04/07/2023,27671,223,Cortar,PRODUCTIVO,Rama Bruckner,802,Maya Chica 3mts Ancho,790,03:21:16 p. m.,04:05:06 p. m.,44,0,0,Hazael,Samuel
+04/07/2023,27671,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,04:05:06 p. m.,04:25:06 p. m.,20,0,0,Hazael,Samuel
+04/07/2023,27664,212,Teñido Claro,PRODUCTIVO,Rama Bruckner,001,Pongee,237,04:25:06 p. m.,04:38:39 p. m.,14,0,0,Hazael,Samuel
+04/07/2023,27664,1109,Tela rallada/fallada,IMPRODUCTIVO,Rama Bruckner,0,,,04:38:39 p. m.,05:06:08 p. m.,27,0,0,Hazael,Samuel
+04/07/2023,27664,212,Teñido Claro,PRODUCTIVO,Rama Bruckner,001,Pongee,1598,05:06:08 p. m.,06:27:33 p. m.,81,0,0,Hazael,Samuel
+04/07/2023,27664,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,06:27:33 p. m.,06:34:34 p. m.,7,0,0,Hazael,Samuel
+04/07/2023,27660,202,Termofijado Estampado Claro,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,542,06:34:34 p. m.,06:59:58 p. m.,25,0,0,Hazael,Samuel
+04/07/2023,27660,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,1624,07:00:00 p. m.,08:05:00 p. m.,65,1,1,Rafael,Genaro
+04/07/2023,27660,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,08:05:00 p. m.,08:08:00 p. m.,3,1,1,Rafael,Genaro
+04/07/2023,27671,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,900,Maquila,440,08:08:00 p. m.,08:22:00 p. m.,14,1,1,Rafael,Genaro
+04/07/2023,27671,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,08:22:00 p. m.,08:26:00 p. m.,4,1,1,Rafael,Genaro
+04/07/2023,27658,225,Teñido de piel de durazno,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,2172,08:26:00 p. m.,10:16:00 p. m.,110,1,1,Rafael,Genaro
+04/07/2023,27658,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,10:16:00 p. m.,10:27:00 p. m.,11,1,1,Rafael,Genaro
+05/07/2023,27657,225,Teñido de piel de durazno,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,2140,10:27:00 p. m.,12:15:00 a. m.,108,1,1,Rafael,Genaro
+05/07/2023,27657,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,12:15:00 a. m.,12:18:00 a. m.,3,1,1,Rafael,Genaro
+05/07/2023,27659,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,2187,12:18:00 a. m.,01:44:00 a. m.,86,1,1,Rafael,Genaro
+05/07/2023,27659,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,01:44:00 a. m.,01:48:00 a. m.,4,1,1,Rafael,Genaro
+05/07/2023,27668,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,075,PD 75 gsm,2572,01:48:00 a. m.,03:10:00 a. m.,82,1,1,Rafael,Genaro
+05/07/2023,27672,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,2162,03:10:00 a. m.,04:23:00 a. m.,73,1,1,Rafael,Genaro
+05/07/2023,27638,1121,Reproceso,IMPRODUCTIVO,Rama Bruckner,0,,,04:23:00 a. m.,04:42:00 a. m.,19,1,1,Rafael,Genaro
+05/07/2023,27638,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,04:42:00 a. m.,04:49:00 a. m.,7,1,1,Rafael,Genaro
+05/07/2023,27666,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,170,Tropical 170,1979,04:49:00 a. m.,05:53:00 a. m.,64,1,1,Rafael,Genaro
+05/07/2023,27666,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,05:53:00 a. m.,05:56:00 a. m.,3,1,1,Rafael,Genaro
+05/07/2023,27665,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,900,Maquila,1110,05:56:00 a. m.,07:00:00 a. m.,64,1,1,Rafael,Genaro
+05/07/2023,27665,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,900,Maquila,81,07:00:00 a. m.,07:05:15 a. m.,5,0,0,Hazael,Samuel
+05/07/2023,27665,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,07:05:15 a. m.,07:15:38 a. m.,10,0,0,Hazael,Samuel
+05/07/2023,27667,209,Secado teñida Jigger,PRODUCTIVO,Rama Bruckner,170,Tropical 170,2079,07:15:38 a. m.,08:20:27 a. m.,65,0,0,Hazael,Samuel
+05/07/2023,27667,1113,Pruebas Rama,IMPRODUCTIVO,Rama Bruckner,0,,,08:20:27 a. m.,08:55:01 a. m.,35,0,0,Hazael,Samuel
+05/07/2023,27667,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,170,Tropical 170,251,08:55:01 a. m.,09:12:15 a. m.,17,0,0,Hazael,Samuel
+05/07/2023,27667,1104,Color fuera de tono impregnado ,IMPRODUCTIVO,Rama Bruckner,0,,,09:12:15 a. m.,09:32:57 a. m.,21,0,0,Hazael,Samuel
+05/07/2023,27672,1121,Reproceso,IMPRODUCTIVO,Rama Bruckner,085,PD 85 gsm,2162,09:32:57 a. m.,10:36:42 a. m.,64,0,0,Hazael,Samuel
+05/07/2023,27672,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,10:36:42 a. m.,10:45:42 a. m.,9,0,0,Hazael,Samuel
+05/07/2023,27667,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,170,Tropical 170,1772,10:45:42 a. m.,12:52:29 p. m.,127,0,0,Hazael,Samuel
+05/07/2023,27667,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,12:52:29 p. m.,01:07:56 p. m.,15,0,0,Hazael,Samuel
+05/07/2023,27674,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,075,PD 75 gsm,2092,01:07:56 p. m.,02:54:50 p. m.,107,0,0,Hazael,Samuel
+05/07/2023,27674,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,02:54:50 p. m.,03:02:13 p. m.,7,0,0,Hazael,Samuel
+05/07/2023,27673,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,1058,03:02:13 p. m.,03:39:27 p. m.,37,0,0,Hazael,Samuel
+05/07/2023,27673,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,03:39:27 p. m.,03:50:23 p. m.,11,0,0,Hazael,Samuel
+05/07/2023,27662,216,Planchado (Maquila tira bordada),PRODUCTIVO,Rama Bruckner,904,Maquila Tira Boradada Poliester,358,03:50:23 p. m.,04:29:44 p. m.,39,0,0,Hazael,Samuel
+05/07/2023,27662,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,04:29:44 p. m.,04:34:11 p. m.,4,0,0,Hazael,Samuel
+05/07/2023,27662,216,Planchado (Maquila tira bordada),PRODUCTIVO,Rama Bruckner,904,Maquila Tira Boradada Poliester,358,04:34:11 p. m.,05:14:34 p. m.,40,0,0,Hazael,Samuel
+05/07/2023,27662,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,05:14:34 p. m.,05:20:20 p. m.,6,0,0,Hazael,Samuel
+05/07/2023,27662,216,Planchado (Maquila tira bordada),PRODUCTIVO,Rama Bruckner,904,Maquila Tira Boradada Poliester,358,05:20:20 p. m.,05:55:01 p. m.,35,0,0,Hazael,Samuel
+05/07/2023,27662,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,05:55:01 p. m.,06:03:16 p. m.,8,0,0,Hazael,Samuel
+05/07/2023,27666,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,170,Tropical 170,940,06:03:16 p. m.,07:03:17 p. m.,60,0,0,Hazael,Samuel
+05/07/2023,27666,218,Acabado carton1,PRODUCTIVO,Rama Bruckner,170,Tropical 170,1028,07:00:00 p. m.,08:05:00 p. m.,65,1,1,Rafael,Genaro
+05/07/2023,27666,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,08:05:00 p. m.,08:13:00 p. m.,8,1,1,Rafael,Genaro
+05/07/2023,27663,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,001,Pongee,3034,08:13:00 p. m.,09:26:00 p. m.,73,1,1,Rafael,Genaro
+05/07/2023,27663,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,09:26:00 p. m.,09:28:00 p. m.,2,1,1,Rafael,Genaro
+05/07/2023,27676,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,002,Tropical ,2053,09:28:00 p. m.,10:26:00 p. m.,58,1,1,Rafael,Genaro
+05/07/2023,27676,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,10:26:00 p. m.,10:30:00 p. m.,4,1,1,Rafael,Genaro
+06/07/2023,27676,211,Teñido Carton claro,PRODUCTIVO,Rama Bruckner,002,Tropical ,2055,10:30:00 p. m.,12:38:00 a. m.,128,1,1,Rafael,Genaro
+06/07/2023,27676,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,12:38:00 a. m.,12:41:00 a. m.,3,1,1,Rafael,Genaro
+06/07/2023,27672,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,1619,12:41:00 a. m.,01:46:00 a. m.,65,1,1,Rafael,Genaro
+06/07/2023,27672,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,01:46:00 a. m.,01:48:00 a. m.,2,1,1,Rafael,Genaro
+06/07/2023,27668,235,Acabado PIEL DE DURAZNO,PRODUCTIVO,Rama Bruckner,075,PD 75 gsm,2635,01:48:00 a. m.,03:34:00 a. m.,106,1,1,Rafael,Genaro
+06/07/2023,27668,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,03:34:00 a. m.,03:37:00 a. m.,3,1,1,Rafael,Genaro
+06/07/2023,27674,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,075,PD 75 gsm,3192,03:37:00 a. m.,06:13:00 a. m.,156,1,1,Rafael,Genaro
+06/07/2023,27672,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,460,06:13:00 a. m.,06:32:00 a. m.,19,1,1,Rafael,Genaro
+06/07/2023,27672,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,06:32:00 a. m.,06:39:00 a. m.,7,1,1,Rafael,Genaro
+06/07/2023,27446,210,Secar Pesco Teñido,PRODUCTIVO,Rama Bruckner,162,Pesco 160 Hilos 2.70 de ancho,367,06:39:00 a. m.,07:00:00 a. m.,21,1,1,Rafael,Genaro
+06/07/2023,27446,210,Secar Pesco Teñido,PRODUCTIVO,Rama Bruckner,903,Maquila PESCO,170,07:00:00 a. m.,07:09:07 a. m.,9,0,0,Hazael,Samuel
+06/07/2023,27446,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,07:09:07 a. m.,07:25:03 a. m.,16,0,0,Hazael,Samuel
+06/07/2023,27669,210,Secar Pesco Teñido,PRODUCTIVO,Rama Bruckner,903,Maquila PESCO,805,07:25:03 a. m.,08:17:30 a. m.,52,0,0,Hazael,Samuel
+06/07/2023,27669,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,08:17:30 a. m.,08:25:16 a. m.,8,0,0,Hazael,Samuel
+06/07/2023,27675,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,075,PD 75 gsm,2530,08:25:16 a. m.,09:35:55 a. m.,71,0,0,Hazael,Samuel
+06/07/2023,27675,1115,Falta de caballete,IMPRODUCTIVO,Rama Bruckner,0,,,09:35:55 a. m.,09:50:36 a. m.,15,0,0,Hazael,Samuel
+06/07/2023,27677,234,Termofijado piel de durazno p/ est.,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,1012,09:50:36 a. m.,10:25:14 a. m.,35,0,0,Hazael,Samuel
+06/07/2023,27677,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,10:25:14 a. m.,10:42:50 a. m.,18,0,0,Hazael,Samuel
+06/07/2023,27677,1103,Falta de color rama,IMPRODUCTIVO,Rama Bruckner,0,,,10:42:50 a. m.,10:56:50 a. m.,14,0,0,Hazael,Samuel
+06/07/2023,27669,207,Teñir PESCO,PRODUCTIVO,Rama Bruckner,903,Maquila PESCO,805,10:56:50 a. m.,11:57:21 a. m.,61,0,0,Hazael,Samuel
+06/07/2023,27669,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,11:57:21 a. m.,12:08:54 p. m.,12,0,0,Hazael,Samuel
+06/07/2023,27680,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,002,Tropical ,1132,12:08:54 p. m.,12:46:14 p. m.,37,0,0,Hazael,Samuel
+06/07/2023,27680,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,12:46:14 p. m.,12:56:00 p. m.,70,0,0,Hazael,Samuel
+06/07/2023,27680,237,Teñido carton medio,PRODUCTIVO,Rama Bruckner,002,Tropical ,572,12:56:36 p. m.,01:30:43 p. m.,34,0,0,Hazael,Samuel
+06/07/2023,27680,1104,Color fuera de tono impregnado ,IMPRODUCTIVO,Rama Bruckner,0,,,01:30:43 p. m.,01:48:46 p. m.,18,0,0,Hazael,Samuel
+06/07/2023,27680,237,Teñido carton medio,PRODUCTIVO,Rama Bruckner,002,Tropical ,523,01:48:46 p. m.,02:26:52 p. m.,38,0,0,Hazael,Samuel
+06/07/2023,27680,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,02:26:52 p. m.,02:35:27 p. m.,9,0,0,Hazael,Samuel
+06/07/2023,27678,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,002,Tropical ,4103,02:35:27 p. m.,04:44:34 p. m.,129,0,0,Hazael,Samuel
+06/07/2023,27678,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,04:44:34 p. m.,04:49:36 p. m.,5,0,0,Hazael,Samuel
+06/07/2023,27673,202,Termofijado Estampado Claro,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,1080,04:49:36 p. m.,05:45:38 p. m.,56,0,0,Hazael,Samuel
+06/07/2023,27673,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,05:45:38 p. m.,05:55:44 p. m.,10,0,0,Hazael,Samuel
+06/07/2023,27670,205,Secar Pesco Para estampar,PRODUCTIVO,Rama Bruckner,903,Maquila PESCO,705,05:55:44 p. m.,06:39:51 p. m.,44,0,0,Hazael,Samuel
+06/07/2023,27670,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,06:39:51 p. m.,06:51:21 p. m.,12,0,0,Hazael,Samuel
+06/07/2023,27682,237,Teñido carton medio,PRODUCTIVO,Rama Bruckner,002,Tropical ,2040,07:00:00 p. m.,09:07:00 p. m.,127,1,1,Rafael,Genaro
+06/07/2023,27682,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,09:07:00 p. m.,09:16:00 p. m.,9,1,1,Rafael,Genaro
+06/07/2023,27663,236,Teñido oscuro,PRODUCTIVO,Rama Bruckner,001,Pongee,330,09:16:00 p. m.,09:36:00 p. m.,20,1,1,Rafael,Genaro
+06/07/2023,27663,1109,Tela rallada/fallada,IMPRODUCTIVO,Rama Bruckner,0,,,09:36:00 p. m.,09:47:00 p. m.,11,1,1,Rafael,Genaro
+07/07/2023,27663,236,Teñido oscuro,PRODUCTIVO,Rama Bruckner,001,Pongee,2206,09:47:00 p. m.,12:05:00 a. m.,138,1,1,Rafael,Genaro
+07/07/2023,27663,1106,Lavado foular,IMPRODUCTIVO,Rama Bruckner,0,,,12:05:00 a. m.,12:15:00 a. m.,10,1,1,Rafael,Genaro
+07/07/2023,27681,208,Termofijado Crudo para Teñido ,PRODUCTIVO,Rama Bruckner,002,Tropical ,2057,12:15:00 a. m.,01:14:00 a. m.,59,1,1,Rafael,Genaro
+07/07/2023,27681,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,01:14:00 a. m.,01:17:00 a. m.,3,1,1,Rafael,Genaro
+07/07/2023,27675,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,075,PD 75 gsm,2645,01:17:00 a. m.,03:17:00 a. m.,120,1,1,Rafael,Genaro
+07/07/2023,27675,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,03:17:00 a. m.,03:20:00 a. m.,3,1,1,Rafael,Genaro
+07/07/2023,27669,204,Termofijado Estampado Pesco ,PRODUCTIVO,Rama Bruckner,900,Maquila,826,03:20:00 a. m.,03:53:00 a. m.,33,1,1,Rafael,Genaro
+07/07/2023,27669,1111,Cambio de caballete ,IMPRODUCTIVO,Rama Bruckner,0,,,03:53:00 a. m.,03:57:00 a. m.,4,1,1,Rafael,Genaro
+07/07/2023,27677,227,Termofijar estampado piel de durazno,PRODUCTIVO,Rama Bruckner,085,PD 85 gsm,1051,03:57:00 a. m.,04:44:00 a. m.,47,1,1,Rafael,Genaro
+03/07/2023,NA,1208,Preparación de diseño Estampado,IMPRODUCTIVO,Estampadora,,,,07:00:00 a. m.,08:00:40 a. m.,61,0,0,Jose Maria,Juan
+03/07/2023,NA,1213,Cilindro roto/safado,IMPRODUCTIVO,Estampadora,0,,,08:00:40 a. m.,08:25:25 a. m.,25,0,0,Jose Maria,Juan
+03/07/2023,27654,113,Estampado 35m/min,PRODUCTIVO,Estampadora,001,Pongee,2955,08:25:25 a. m.,09:53:14,88,0,0,Jose Maria,Juan
+03/07/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,,,09:53:14,11:32:41 a. m.,99,0,0,Jose Maria,Juan
+03/07/2023,27653,113,Estampado 35m/min,PRODUCTIVO,Estampadora,001,Pongee,2916,11:32:41 a. m.,12:51:55 p. m.,79,0,0,Jose Maria,Juan
+03/07/2023,NA,1207,Cambio de variante,IMPRODUCTIVO,Estampadora,0,,,12:51:55 p. m.,01:34:52 p. m.,43,0,0,Jose Maria,Juan
+03/07/2023,27652,113,Estampado 35m/min,PRODUCTIVO,Estampadora,001,Pongee,3115,01:34:52 p. m.,02:47:12 p. m.,72,0,0,Jose Maria,Juan
+03/07/2023,NA,1220,Falta de tela,IMPRODUCTIVO,Estampadora,0,,,02:47:12 p. m.,07:00:13 p. m.,253,0,0,Jose Maria,Juan
+04/07/2023,NA,1208,Preparación de diseño Estampado,IMPRODUCTIVO,Estampadora,,,,07:00:00 a. m.,07:35:26 a. m.,35,0,0,Jose Maria,Juan
+04/07/2023,27659,113,Estampado 35m/min,PRODUCTIVO,Estampadora,085,PD 85 gsm,2094,07:35:26 a. m.,08:45:12 a. m.,70,0,0,Jose Maria,Juan
+04/07/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,,,08:45:12 a. m.,09:32:10 a. m.,47,0,0,Jose Maria,Juan
+04/07/2023,27660,113,Estampado 35m/min,PRODUCTIVO,Estampadora,085,PD 85 gsm,2028,09:32:10 a. m.,10:50:11 a. m.,78,0,0,Jose Maria,Juan
+04/07/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,,,10:50:11 a. m.,11:17:31 a. m.,27,0,0,Jose Maria,Juan
+04/07/2023,27657,113,Estampado 35m/min,PRODUCTIVO,Estampadora,085,PD 85 gsm,2052,11:17:31 a. m.,12:15:47 p. m.,58,0,0,Jose Maria,Juan
+04/07/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,,,12:15:47 p. m.,01:55:03 p. m.,99,0,0,Jose Maria,Juan
+04/07/2023,27658,112,Estampado 30m/min,PRODUCTIVO,Estampadora,085,PD 85 gsm,2045,13:55:03,03:05:49 p. m.,71,0,0,Jose Maria,Juan
+04/07/2023,NA,1206,Lavado de rasqueta y Cilindros,IMPRODUCTIVO,Estampadora,0,,,03:05:49 p. m.,04:50:11 p. m.,104,0,0,Jose Maria,Juan
+04/07/2023,27671,111,Estampado 25m/min,PRODUCTIVO,Estampadora,144,PES/CO 144 hilos,418,04:50:11 p. m.,05:12:53 p. m.,23,0,0,Jose Maria,Juan
+04/07/2023,NA,1220,Falta de tela,IMPRODUCTIVO,Estampadora,0,,,05:12:53 p. m.,07:00:40 p. m.,108,0,0,Jose Maria,Juan
+05/07/2023,NA,1208,Preparación de diseño Estampado,IMPRODUCTIVO,Estampadora,,,,07:00:00 a. m.,07:56:10 a. m.,56,0,0,Jose Maria,Juan
+05/07/2023,27668,113,Estampado 35m/min,PRODUCTIVO,Estampadora,085,PD 85 gsm,2547,07:56:10 a. m.,09:17:57 a. m.,82,0,0,Jose Maria,Juan
+05/07/2023,NA,1220,Falta de tela,IMPRODUCTIVO,Estampadora,0,,,09:17:57 a. m.,11:08:21 a. m.,110,0,0,Jose Maria,Juan
+05/07/2023,27672,112,Estampado 30m/min,PRODUCTIVO,Estampadora,085,PD 85 gsm,2004,11:08:21 a. m.,12:47:24 p. m.,99,0,0,Jose Maria,Juan
+05/07/2023,NA,1220,Falta de tela,IMPRODUCTIVO,Estampadora,0,,,12:47:24 p. m.,02:54:13 p. m.,127,0,0,Jose Maria,Juan
+05/07/2023,27674,113,Estampado 35m/min,PRODUCTIVO,Estampadora,075,PD 75 gsm,3106,02:54:13 p. m.,05:00:00 p. m.,126,0,0,Jose Maria,Juan
+05/07/2023,NA,1206,Lavado de rasqueta y Cilindros,IMPRODUCTIVO,Estampadora,0,,,05:00:00 p. m.,07:00:54 p. m.,121,0,0,Jose Maria,Juan
+06/07/2023,NA,1223,Junta,IMPRODUCTIVO,Estampadora,,,,07:00:00 a. m.,09:23:58 a. m.,144,0,0,Jose Maria,Juan
+06/07/2023,27673,111,Estampado 25m/min,PRODUCTIVO,Estampadora,085,PD 85 gsm,1024,09:23:58 a. m.,10:20:12 a. m.,56,0,0,Jose Maria,Juan
+06/07/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,,,10:20:12 a. m.,12:00:05 p. m.,100,0,0,Jose Maria,Juan
+06/07/2023,27675,111,Estampado 25m/min,PRODUCTIVO,Estampadora,075,PD 75 gsm,2556,12:00:05 p. m.,01:45:11 p. m.,105,0,0,Jose Maria,Juan
+06/07/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,,,01:45:11 p. m.,02:46:08 p. m.,61,0,0,Jose Maria,Juan
+06/07/2023,27677,111,Estampado 25m/min,PRODUCTIVO,Estampadora,085,PD 85 gsm,1008,02:46:08 p. m.,03:53:18 p. m.,67,0,0,Jose Maria,Juan
+06/07/2023,NA,1209,Cambio de diseño,IMPRODUCTIVO,Estampadora,0,,,03:53:18 p. m.,05:10:03 p. m.,77,0,0,Jose Maria,Juan
+06/07/2023,27669,112,Estampado 30m/min,PRODUCTIVO,Estampadora,144,PES/CO 144 hilos,796,05:10:03 p. m.,05:43:23 p. m.,33,0,0,Jose Maria,Juan
+04/07/2023,27666,1300,Cargar Jigger HT,IMPRODUCTIVO,Jigger HT,170,Tropical 170,2007,11:45:00 a. m.,12:12:00 p. m.,27,27,27,Antonio,Samuel
+04/07/2023,27666,300,Lavar Poliéster ,PRODUCTIVO,Jigger HT,170,Tropical 170,2007,12:12:00 p. m.,01:31:12 p. m.,79,79,79,Antonio,Samuel
+04/07/2023,27666,301,Curva de agotamiento Pes,PRODUCTIVO,Jigger HT,170,Tropical 170,2007,01:31:12 p. m.,03:00:00 p. m.,89,89,89,Antonio,Samuel
+04/07/2023,27666,303,Enfriado de 130ºC a 80ºC Pes,PRODUCTIVO,Jigger HT,170,Tropical 170,2007,03:00:00 p. m.,04:08:30 p. m.,68,68,68,Antonio,Samuel
+04/07/2023,27666,303,Enfriado de 130ºC a 80ºC Pes,PRODUCTIVO,Jigger HT,170,Tropical 170,2007,04:08:30 p. m.,04:44:09 p. m.,36,36,36,Antonio,Samuel
+04/07/2023,27666,304,Reductivo Pes,PRODUCTIVO,Jigger HT,170,Tropical 170,2007,04:44:09 p. m.,05:45:25 p. m.,61,61,61,Antonio,Samuel
+04/07/2023,27666,315,Enjuague,PRODUCTIVO,Jigger HT,170,Tropical 170,2007,05:45:25 p. m.,06:07:05 p. m.,22,22,22,Antonio,Samuel
+04/07/2023,27666,1301,Descargar Jigger HT,IMPRODUCTIVO,Jigger HT,170,Tropical 170,2007,06:07:05 p. m.,06:35:00 p. m.,28,28,28,Antonio,Samuel
+03/07/2023,27651,1500,Cargar Combi Jigger,IMPRODUCTIVO,Jigger Combi,085,PD 85 gsm,1611,09:15:00 a. m.,09:43:00 a. m.,28,28,28,Antonio,Samuel
+03/07/2023,27651,500,Lavar Poliéster ,PRODUCTIVO,Jigger Combi,085,PD 85 gsm,1611,09:43:00 a. m.,11:21:00 a. m.,98,98,98,Antonio,Samuel
+03/07/2023,27651,501,Curva de agotamiento Pes,PRODUCTIVO,Jigger Combi,085,PD 85 gsm,1611,11:21:00 a. m.,01:30:00 p. m.,129,129,129,Antonio,Samuel
+03/07/2023,27651,502,Agotamiento Pes,PRODUCTIVO,Jigger Combi,085,PD 85 gsm,1611,01:30:00 p. m.,02:36:52 p. m.,67,67,67,Antonio,Samuel
+03/07/2023,27651,503,Enfriado de 130ºC a 80ºC Pes,PRODUCTIVO,Jigger Combi,085,PD 85 gsm,1611,02:36:52 p. m.,03:17:00 p. m.,40,40,40,Antonio,Samuel
+03/07/2023,27651,504,Reductivo Pes,PRODUCTIVO,Jigger Combi,085,PD 85 gsm,1611,03:17:00 p. m.,04:04:00 p. m.,47,47,47,Antonio,Samuel
+03/07/2023,27651,522,Enjuague,PRODUCTIVO,Jigger Combi,085,PD 85 gsm,1611,04:04:00 p. m.,04:27:00 p. m.,23,23,23,Antonio,Samuel
+03/07/2023,27651,1501,Descargar Combi Jigger,IMPRODUCTIVO,Jigger Combi,085,PD 85 gsm,1611,04:27:00 p. m.,05:00:34 p. m.,34,34,34,Antonio,Samuel
