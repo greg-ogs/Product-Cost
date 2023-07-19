@@ -13,7 +13,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Costos")
         self.setGeometry(50, 50, 400, 300)
 
-        self.label = QLabel("¡Hola, PyQt!", self)
+        self.label = QLabel("En espera", self)
         self.label.setGeometry(50, 50, 200, 30)
 
         self.button = QPushButton("Haz clic", self)

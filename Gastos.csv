@@ -1,112 +1,87 @@
-MORAL TEXTIL SA DE CV,,,,,,,
-Gtos de Fabricacion MT Junio 2023,,,,,,,
 tipo,poliza,fecha,cargos,concepto,procedencia,cuenta,nombre
-Diario,88,01/06/2023, 438.46 ,Compras del 01/06/2023,Automática modificada,560102206,Agua Purificada al Personal
-Diario,90,03/06/2023, 161.32 ,Compras del 03/06/2023,Automática,560102206,Agua Purificada al Personal
-Diario,93,07/06/2023, 157.18 ,Compras del 07/06/2023,Automática,560102206,Agua Purificada al Personal
-Diario,95,09/06/2023, 99.27 ,Compras del 09/06/2023,Automática,560102206,Agua Purificada al Personal
-Diario,97,13/06/2023, 86.86 ,Compras del 13/06/2023,Automática,560102206,Agua Purificada al Personal
-Diario,100,16/06/2023, 148.91 ,Compras del 16/06/2023,Automática,560102206,Agua Purificada al Personal
-Diario,103,21/06/2023, 140.64 ,Compras del 21/06/2023,Automática,560102206,Agua Purificada al Personal
-Diario,107,27/06/2023, 148.91 ,Compras del 27/06/2023,Automática,560102206,Agua Purificada al Personal
-Diario,110,30/06/2023, 206.82 ,Compras del 30/06/2023,Automática,560102206,Agua Purificada al Personal
-Diario,86,30/06/2023, 461.53 ,Amortizaciones del mes de Mayo 2023,Manual,560101010,Aguinaldos
-Diario,147,30/06/2023," 79,494.91 ",Depreciaciones del mes de Junio 2023,Manual,560121111,Amortización de Gastos de Instalación
-Diario,88,01/06/2023," 1,757.96 ",Compras del 01/06/2023,Automática modificada,560102205,Apoyo Transporte de Personal
-Diario,93,07/06/2023, 656.00 ,Compras del 07/06/2023,Automática,560102205,Apoyo Transporte de Personal
-Diario,95,09/06/2023, 369.98 ,Compras del 09/06/2023,Automática,560102205,Apoyo Transporte de Personal
-Diario,97,13/06/2023, 332.99 ,Compras del 13/06/2023,Automática,560102205,Apoyo Transporte de Personal
-Diario,99,15/06/2023, 111.00 ,Compras del 15/06/2023,Automática,560102205,Apoyo Transporte de Personal
-Diario,100,16/06/2023, 141.00 ,Compras del 16/06/2023,Automática,560102205,Apoyo Transporte de Personal
-Diario,103,21/06/2023, 840.99 ,Compras del 21/06/2023,Automática,560102205,Apoyo Transporte de Personal
-Diario,108,28/06/2023, 443.99 ,Compras del 28/06/2023,Automática,560102205,Apoyo Transporte de Personal
-Diario,109,29/06/2023, 368.00 ,Compras del 29/06/2023,Automática,560102205,Apoyo Transporte de Personal
-Diario,88,01/06/2023, 486.71 ,Compras del 01/06/2023,Automática modificada,560107702,Articulos y productos de limpieza
-Diario,103,21/06/2023, 263.81 ,Compras del 21/06/2023,Automática,560107702,Articulos y productos de limpieza
-Diario,107,27/06/2023," 1,076.26 ",Compras del 27/06/2023,Automática,560107702,Articulos y productos de limpieza
-Diario,109,29/06/2023, 14.71 ,Compras del 29/06/2023,Automática,560102204,"Cafetería, Eventos  Deportivos, Servicio de Comedo"
-Diario,88,01/06/2023," 6,454.85 ",Compras del 01/06/2023,Automática modificada,560109921,Consumibles
-Diario,89,02/06/2023," 1,629.82 ",Compras del 02/06/2023,Automática,560109921,Consumibles
-Diario,91,05/06/2023, 158.00 ,Compras del 05/06/2023,Automática,560109921,Consumibles
-Diario,93,07/06/2023," 1,104.01 ",Compras del 07/06/2023,Automática,560109921,Consumibles
-Diario,96,12/06/2023," 4,125.15 ",Compras del 12/06/2023,Automática,560109921,Consumibles
-Diario,97,13/06/2023," 3,041.97 ",Compras del 13/06/2023,Automática,560109921,Consumibles
-Diario,101,19/06/2023, 300.00 ,Compras del 19/06/2023,Automática,560109921,Consumibles
-Diario,102,20/06/2023," 1,982.49 ",Compras del 20/06/2023,Automática,560109921,Consumibles
-Diario,103,21/06/2023, 105.00 ,Compras del 21/06/2023,Automática,560109921,Consumibles
-Diario,104,22/06/2023, 270.20 ,Compras del 22/06/2023,Automática,560109921,Consumibles
-Diario,105,23/06/2023, 170.00 ,Compras del 23/06/2023,Automática,560109921,Consumibles
-Diario,106,26/06/2023, 232.00 ,Compras del 26/06/2023,Automática,560109921,Consumibles
-Diario,107,27/06/2023, 200.99 ,Compras del 27/06/2023,Automática,560109921,Consumibles
-Diario,108,28/06/2023, 105.00 ,Compras del 28/06/2023,Automática,560109921,Consumibles
-Diario,109,29/06/2023," 1,439.83 ",Compras del 29/06/2023,Automática,560109921,Consumibles
-Diario,110,30/06/2023, 76.00 ,Compras del 30/06/2023,Automática,560109921,Consumibles
-Diario,96,12/06/2023," 1,044.00 ",Compras del 12/06/2023,Automática,560103311,Control de Fauna Nociva
-Diario,97,13/06/2023," 25,381.49 ",Compras del 13/06/2023,Automática,560101004,Cuotas imss
-Diario,147,30/06/2023," 253,186.35 ",Depreciaciones del mes de Junio 2023,Manual,560121102,Depreciación de Maquinaria y Equipo
-Diario,95,09/06/2023," 139,276.00 ",Compras del 09/06/2023,Automática,560103301,Energía  Eléctrica Edificio
-Diario,88,01/06/2023," 1,250.01 ",Compras del 01/06/2023,Automática modificada,560102202,Equipo de Protección Personal
-Diario,86,30/06/2023," 16,724.00 ",Amortizaciones del mes de Mayo 2023,Manual,560103314,Fabricación de Cilindros
-Diario,88,01/06/2023," 43,808.00 ",Compras del 01/06/2023,Automática modificada,560109922,Gas L.P
-Diario,93,07/06/2023," 44,203.88 ",Compras del 07/06/2023,Automática,560109922,Gas L.P
-Diario,97,13/06/2023," 44,289.00 ",Compras del 13/06/2023,Automática,560109922,Gas L.P
-Diario,100,16/06/2023," 45,054.00 ",Compras del 16/06/2023,Automática,560109922,Gas L.P
-Diario,102,20/06/2023," 19,413.00 ",Compras del 20/06/2023,Automática,560109922,Gas L.P
-Diario,105,23/06/2023," 28,989.00 ",Compras del 23/06/2023,Automática,560109922,Gas L.P
-Diario,107,27/06/2023," 16,640.96 ",Compras del 27/06/2023,Automática,560109922,Gas L.P
-Diario,108,28/06/2023," 1,276.04 ",Compras del 28/06/2023,Automática,560109922,Gas L.P
-Diario,109,29/06/2023," 30,913.38 ",Compras del 29/06/2023,Automática,560109922,Gas L.P
-Diario,103,21/06/2023, 541.00 ,Compras del 21/06/2023,Automática,560109919,Gastos Vigilancia
-Diario,97,13/06/2023," 8,085.21 ",Compras del 13/06/2023,Automática,560109913,Herramientas
-Diario,99,15/06/2023, 50.00 ,Compras del 15/06/2023,Automática,560109913,Herramientas
-Diario,102,20/06/2023, 267.61 ,Compras del 20/06/2023,Automática,560109913,Herramientas
-Diario,91,05/06/2023," 3,630.84 ",Compras del 05/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,94,08/06/2023," 3,860.64 ",Compras del 08/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,100,16/06/2023," 3,860.64 ",Compras del 16/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,102,20/06/2023, 9.19 ,Compras del 20/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,104,22/06/2023," 3,630.84 ",Compras del 22/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,105,23/06/2023," 4,759.73 ",Compras del 23/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,108,28/06/2023," 9,192.00 ",Compras del 28/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,109,29/06/2023," 3,860.64 ",Compras del 29/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,110,30/06/2023," 4,779.84 ",Compras del 30/06/2023,Automática,560108804,Honorarios a Profesionistas
-Diario,96,12/06/2023," 4,657.45 ",Compras del 12/06/2023,Automática,560105507,Impuestos y derechos
-Diario,102,20/06/2023," 19,370.42 ",Compras del 20/06/2023,Automática,560105507,Impuestos y derechos
-Diario,92,06/06/2023," 2,681.03 ",Compras del 06/06/2023,Automática,560107711,Instalaciones varias
-Diario,95,09/06/2023," 5,425.01 ",Compras del 09/06/2023,Automática,560107711,Instalaciones varias
-Diario,97,13/06/2023, 200.00 ,Compras del 13/06/2023,Automática,560107711,Instalaciones varias
-Diario,100,16/06/2023," 6,520.87 ",Compras del 16/06/2023,Automática,560107711,Instalaciones varias
-Diario,86,30/06/2023," 13,888.89 ",Amortizaciones del mes de Mayo 2023,Manual,560107711,Instalaciones varias
-Diario,86,30/06/2023," 8,976.38 ",Amortizaciones del mes de Mayo 2023,Manual,560107711,Instalaciones varias
-Diario,93,07/06/2023," 6,614.78 ",Compras del 07/06/2023,Automática,560168604,Mantenimiento caldera
-Diario,89,02/06/2023," 3,861.70 ",Compras del 02/06/2023,Automática,560109901,Papeleria y art. para produccion
-Diario,104,22/06/2023, 298.74 ,Compras del 22/06/2023,Automática,560109901,Papeleria y art. para produccion
-Diario,108,28/06/2023," 1,192.79 ",Compras del 28/06/2023,Automática,560109901,Papeleria y art. para produccion
-Diario,110,30/06/2023," 1,990.00 ",Compras del 30/06/2023,Automática,560109901,Papeleria y art. para produccion
-Diario,99,15/06/2023," 3,000.00 ",Compras del 15/06/2023,Automática,560167611,"Quimicos, Bacterias e Insumos"
-Diario,105,23/06/2023," 1,600.00 ",Compras del 23/06/2023,Automática,560164603,Refacciones Jigger Comby
-Diario,91,05/06/2023," 3,060.00 ",Compras del 05/06/2023,Automática,560163603,Refacciones Stork
-Diario,94,08/06/2023," 4,700.00 ",Compras del 08/06/2023,Automática,560163603,Refacciones Stork
-Diario,97,13/06/2023," 1,850.00 ",Compras del 13/06/2023,Automática,560163603,Refacciones Stork
-Diario,88,01/06/2023," 3,087.35 ",Compras del 01/06/2023,Automática modificada,560161603,Refacciones y Accesorios
-Diario,86,30/06/2023," 9,639.58 ",Amortizaciones del mes de Mayo 2023,Manual,560107710,Remodelaciones
-Diario,86,30/06/2023," 4,540.66 ",Amortizaciones del mes de Mayo 2023,Manual,560107710,Remodelaciones
-Diario,96,12/06/2023," 8,000.00 ",Compras del 12/06/2023,Automática,560109909,Renta de Inmuebles
-Diario,97,13/06/2023," 7,000.00 ",Compras del 13/06/2023,Automática,560109909,Renta de Inmuebles
-Diario,98,14/06/2023," 16,430.81 ",Compras del 14/06/2023,Automática,560109909,Renta de Inmuebles
-Diario,90,03/06/2023, 681.84 ,Compras del 03/06/2023,Automática,560103308,Servicio de Internet
-Diario,90,03/06/2023, 156.00 ,Compras del 03/06/2023,Automática,560103303,Servicio de Mensajería
-Diario,88,01/06/2023, 258.53 ,Compras del 01/06/2023,Automática modificada,560103321,Servicio monitoreo alarma
-Diario,88,01/06/2023, 959.45 ,Compras del 01/06/2023,Automática modificada,560103306,Sservicio de Telefonía Fija
-Egresos,550,07/06/2023," 3,550.00 ",01 AL 07 DE JUNIO M.T,Automática,560101001,Sueldos y Prestaciones Personal Acabado
-Egresos,12,09/06/2023," 1,452.08 ",NOMINA DEL 02 AL 08 DE JUNIO 23 M.T PERIODO 23,Automática,560101001,Sueldos y Prestaciones Personal Acabado
-Egresos,579,14/06/2023," 3,648.00 ",NOMINA 8 A 14 JUNIO MT,Automática,560101001,Sueldos y Prestaciones Personal Acabado
-Egresos,554,15/06/2023," 1,452.08 ",NOMINA DEL 09 AL 16 DE JUNIO 23 M.T SEM 24,Automática,560101001,Sueldos y Prestaciones Personal Acabado
-Egresos,563,21/06/2023," 3,550.00 ",NOMINA DEL 15 AL 21 JUN MT,Automática,560101001,Sueldos y Prestaciones Personal Acabado
-Egresos,560,23/06/2023," 1,452.08 ",NOMINA PERIODO 16 AL 22 DE JUNIO DE 23 SEM 25,Automática,560101001,Sueldos y Prestaciones Personal Acabado
-Egresos,578,28/06/2023," 2,980.00 ",NOMINA 22 A 28 JUNIO MT,Automática,560101001,Sueldos y Prestaciones Personal Acabado
-Egresos,572,30/06/2023," 2,125.29 ",NOM DEL 23 AL 29 DE JUNIO 23 PERIODO 23 M.T,Automática,560101001,Sueldos y Prestaciones Personal Acabado
-,,," 1,028,632.62 ",,,,
-,,,,,,,
-,,Gtos Admon," 547,480.81 ",,,,
-,,Gtos venta," 187,292.11 ",,,,
-,,Gtos Financieros," 100,890.24 ",,,,
+,,,"707,992.81",,,,
+Diario,88,01/06/2023,438.46,Compras del 01/06/2023,Automática modificada,560102206,Agua Purificada al Personal
+Diario,90,03/06/2023,161.32,Compras del 03/06/2023,Automática,560102206,Agua Purificada al Personal
+Diario,93,07/06/2023,157.18,Compras del 07/06/2023,Automática,560102206,Agua Purificada al Personal
+Diario,95,09/06/2023,99.27,Compras del 09/06/2023,Automática,560102206,Agua Purificada al Personal
+Diario,97,13/06/2023,86.86,Compras del 13/06/2023,Automática,560102206,Agua Purificada al Personal
+Diario,100,16/06/2023,148.91,Compras del 16/06/2023,Automática,560102206,Agua Purificada al Personal
+Diario,103,21/06/2023,140.64,Compras del 21/06/2023,Automática,560102206,Agua Purificada al Personal
+Diario,107,27/06/2023,148.91,Compras del 27/06/2023,Automática,560102206,Agua Purificada al Personal
+Diario,110,30/06/2023,206.82,Compras del 30/06/2023,Automática,560102206,Agua Purificada al Personal
+Diario,147,30/06/2023,"79,494.91",Depreciaciones del mes de Junio 2023,Manual,560121111,Amortización de Gastos de Instalación
+Diario,88,01/06/2023,"1,757.96",Compras del 01/06/2023,Automática modificada,560102205,Apoyo Transporte de Personal
+Diario,93,07/06/2023,656,Compras del 07/06/2023,Automática,560102205,Apoyo Transporte de Personal
+Diario,95,09/06/2023,369.98,Compras del 09/06/2023,Automática,560102205,Apoyo Transporte de Personal
+Diario,97,13/06/2023,332.99,Compras del 13/06/2023,Automática,560102205,Apoyo Transporte de Personal
+Diario,99,15/06/2023,111,Compras del 15/06/2023,Automática,560102205,Apoyo Transporte de Personal
+Diario,100,16/06/2023,141,Compras del 16/06/2023,Automática,560102205,Apoyo Transporte de Personal
+Diario,103,21/06/2023,840.99,Compras del 21/06/2023,Automática,560102205,Apoyo Transporte de Personal
+Diario,108,28/06/2023,443.99,Compras del 28/06/2023,Automática,560102205,Apoyo Transporte de Personal
+Diario,109,29/06/2023,368,Compras del 29/06/2023,Automática,560102205,Apoyo Transporte de Personal
+Diario,88,01/06/2023,486.71,Compras del 01/06/2023,Automática modificada,560107702,Articulos y productos de limpieza
+Diario,103,21/06/2023,263.81,Compras del 21/06/2023,Automática,560107702,Articulos y productos de limpieza
+Diario,107,27/06/2023,"1,076.26",Compras del 27/06/2023,Automática,560107702,Articulos y productos de limpieza
+Diario,109,29/06/2023,14.71,Compras del 29/06/2023,Automática,560102204,"Cafetería, Eventos  Deportivos, Servicio de Comedo"
+Diario,88,01/06/2023,"6,454.85",Compras del 01/06/2023,Automática modificada,560109921,Consumibles
+Diario,89,02/06/2023,"1,629.82",Compras del 02/06/2023,Automática,560109921,Consumibles
+Diario,91,05/06/2023,158,Compras del 05/06/2023,Automática,560109921,Consumibles
+Diario,93,07/06/2023,"1,104.01",Compras del 07/06/2023,Automática,560109921,Consumibles
+Diario,96,12/06/2023,"4,125.15",Compras del 12/06/2023,Automática,560109921,Consumibles
+Diario,97,13/06/2023,"3,041.97",Compras del 13/06/2023,Automática,560109921,Consumibles
+Diario,101,19/06/2023,300,Compras del 19/06/2023,Automática,560109921,Consumibles
+Diario,102,20/06/2023,"1,982.49",Compras del 20/06/2023,Automática,560109921,Consumibles
+Diario,103,21/06/2023,105,Compras del 21/06/2023,Automática,560109921,Consumibles
+Diario,104,22/06/2023,270.2,Compras del 22/06/2023,Automática,560109921,Consumibles
+Diario,105,23/06/2023,170,Compras del 23/06/2023,Automática,560109921,Consumibles
+Diario,106,26/06/2023,232,Compras del 26/06/2023,Automática,560109921,Consumibles
+Diario,107,27/06/2023,200.99,Compras del 27/06/2023,Automática,560109921,Consumibles
+Diario,108,28/06/2023,105,Compras del 28/06/2023,Automática,560109921,Consumibles
+Diario,109,29/06/2023,"1,439.83",Compras del 29/06/2023,Automática,560109921,Consumibles
+Diario,110,30/06/2023,76,Compras del 30/06/2023,Automática,560109921,Consumibles
+Diario,96,12/06/2023,"1,044.00",Compras del 12/06/2023,Automática,560103311,Control de Fauna Nociva
+Diario,147,30/06/2023,"253,186.35",Depreciaciones del mes de Junio 2023,Manual,560121102,Depreciación de Maquinaria y Equipo
+Diario,95,09/06/2023,"139,276.00",Compras del 09/06/2023,Automática,560103301,Energía  Eléctrica Edificio
+Diario,88,01/06/2023,"1,250.01",Compras del 01/06/2023,Automática modificada,560102202,Equipo de Protección Personal
+Diario,86,30/06/2023,"16,724.00",Amortizaciones del mes de Mayo 2023,Manual,560103314,Fabricación de Cilindros
+Diario,103,21/06/2023,541,Compras del 21/06/2023,Automática,560109919,Gastos Vigilancia
+Diario,97,13/06/2023,"8,085.21",Compras del 13/06/2023,Automática,560109913,Herramientas
+Diario,99,15/06/2023,50,Compras del 15/06/2023,Automática,560109913,Herramientas
+Diario,102,20/06/2023,267.61,Compras del 20/06/2023,Automática,560109913,Herramientas
+Diario,91,05/06/2023,"3,630.84",Compras del 05/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,94,08/06/2023,"3,860.64",Compras del 08/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,100,16/06/2023,"3,860.64",Compras del 16/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,102,20/06/2023,9.19,Compras del 20/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,104,22/06/2023,"3,630.84",Compras del 22/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,105,23/06/2023,"4,759.73",Compras del 23/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,108,28/06/2023,"9,192.00",Compras del 28/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,109,29/06/2023,"3,860.64",Compras del 29/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,110,30/06/2023,"4,779.84",Compras del 30/06/2023,Automática,560108804,Honorarios a Profesionistas
+Diario,96,12/06/2023,"4,657.45",Compras del 12/06/2023,Automática,560105507,Impuestos y derechos
+Diario,102,20/06/2023,"19,370.42",Compras del 20/06/2023,Automática,560105507,Impuestos y derechos
+Diario,92,06/06/2023,"2,681.03",Compras del 06/06/2023,Automática,560107711,Instalaciones varias
+Diario,95,09/06/2023,"5,425.01",Compras del 09/06/2023,Automática,560107711,Instalaciones varias
+Diario,97,13/06/2023,200,Compras del 13/06/2023,Automática,560107711,Instalaciones varias
+Diario,100,16/06/2023,"6,520.87",Compras del 16/06/2023,Automática,560107711,Instalaciones varias
+Diario,86,30/06/2023,"13,888.89",Amortizaciones del mes de Mayo 2023,Manual,560107711,Instalaciones varias
+Diario,86,30/06/2023,"8,976.38",Amortizaciones del mes de Mayo 2023,Manual,560107711,Instalaciones varias
+Diario,93,07/06/2023,"6,614.78",Compras del 07/06/2023,Automática,560168604,Mantenimiento caldera
+Diario,89,02/06/2023,"3,861.70",Compras del 02/06/2023,Automática,560109901,Papeleria y art. para produccion
+Diario,104,22/06/2023,298.74,Compras del 22/06/2023,Automática,560109901,Papeleria y art. para produccion
+Diario,108,28/06/2023,"1,192.79",Compras del 28/06/2023,Automática,560109901,Papeleria y art. para produccion
+Diario,110,30/06/2023,"1,990.00",Compras del 30/06/2023,Automática,560109901,Papeleria y art. para produccion
+Diario,99,15/06/2023,"3,000.00",Compras del 15/06/2023,Automática,560167611,"Quimicos, Bacterias e Insumos"
+Diario,105,23/06/2023,"1,600.00",Compras del 23/06/2023,Automática,560164603,Refacciones Jigger Comby
+Diario,91,05/06/2023,"3,060.00",Compras del 05/06/2023,Automática,560163603,Refacciones Stork
+Diario,94,08/06/2023,"4,700.00",Compras del 08/06/2023,Automática,560163603,Refacciones Stork
+Diario,97,13/06/2023,"1,850.00",Compras del 13/06/2023,Automática,560163603,Refacciones Stork
+Diario,88,01/06/2023,"3,087.35",Compras del 01/06/2023,Automática modificada,560161603,Refacciones y Accesorios
+Diario,86,30/06/2023,"9,639.58",Amortizaciones del mes de Mayo 2023,Manual,560107710,Remodelaciones
+Diario,86,30/06/2023,"4,540.66",Amortizaciones del mes de Mayo 2023,Manual,560107710,Remodelaciones
+Diario,96,12/06/2023,"8,000.00",Compras del 12/06/2023,Automática,560109909,Renta de Inmuebles
+Diario,97,13/06/2023,"7,000.00",Compras del 13/06/2023,Automática,560109909,Renta de Inmuebles
+Diario,98,14/06/2023,"16,430.81",Compras del 14/06/2023,Automática,560109909,Renta de Inmuebles
+Diario,90,03/06/2023,681.84,Compras del 03/06/2023,Automática,560103308,Servicio de Internet
+Diario,90,03/06/2023,156,Compras del 03/06/2023,Automática,560103303,Servicio de Mensajería
+Diario,88,01/06/2023,258.53,Compras del 01/06/2023,Automática modificada,560103321,Servicio monitoreo alarma
+Diario,88,01/06/2023,959.45,Compras del 01/06/2023,Automática modificada,560103306,Sservicio de Telefonía Fija
