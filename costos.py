@@ -3,6 +3,7 @@
 Created on Mon Jun  5 11:07:01 2023
 
 @author: Gregorio Alejandro Oropeza Gomez
+    Aqui no usamos self porque somos masoquistas
 """
 
 import pandas as pd

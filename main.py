@@ -11,7 +11,7 @@ class MainWindow(QMainWindow):
 
     def init_ui(self):
         self.setWindowTitle("Costos")
-        self.setGeometry(50, 50, 800, 600)
+        self.setGeometry(50, 50, 400, 300)
 
         self.label = QLabel("¡Hola, PyQt!", self)
         self.label.setGeometry(50, 50, 200, 30)
