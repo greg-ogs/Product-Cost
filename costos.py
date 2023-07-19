@@ -9,6 +9,12 @@ import pandas as pd
 import csv
 
 
+def main_thread():
+    nlcad, nlcd = load_data()
+    folio_db = order_by_folio(nlcad, nlcd)
+    cal_and_print_all_times(folio_db, nlcad)
+
+
 def load_data():
     compilado_data = pd.read_csv('compilado.csv',
                                  encoding='latin1')  # Lee el archivo de compilado de produccion "procesos"
@@ -61,9 +67,12 @@ def cal_and_print_all_times(folio_db, nlcad):  # Funcion que recolecta el result
     # para asi dar el tiempo total de maquina para cada folio
     len_c = len(folio_db)  # Largo de la primera dim equivalente al numero de folios revisados
     # ask for cost
-    cost_l = float(input("Cual es el precio de la luz?"))
-    cost_w = float(input("Cual es el precio de el agua?"))
-    cost_g = float(input("Cuales el precio del gas?"))
+    #cost_l = float(input("Cual es el precio de la luz?"))
+    #cost_w = float(input("Cual es el precio de el agua?"))
+    #cost_g = float(input("Cuales el precio del gas?"))
+    cost_l = 1.85
+    cost_w = 0
+    cost_g = 8.65
     times = []
     for i in range(len_c):  # Para cada folio
         folio_to_calc = folio_db[i][:][:]  # Toma la info de cada folio
@@ -232,7 +241,7 @@ def consumos_maquina(cost_w, cost_l, cost_g):
 
 def general():
     compilado_data = pd.read_csv('Gastos_generales.csv',
-                                encoding='latin1')  # Lee el archivo de gastos generales
+                                 encoding='latin1')  # Lee el archivo de gastos generales
     shapeA = compilado_data.shape  # Dimencion de la base de datos
 
     list_compilado_data = compilado_data.values.tolist()
