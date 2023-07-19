@@ -68,9 +68,9 @@ def cal_and_print_all_times(folio_db, nlcad):  # Funcion que recolecta el result
     # para asi dar el tiempo total de maquina para cada folio
     len_c = len(folio_db)  # Largo de la primera dim equivalente al numero de folios revisados
     # ask for cost
-    #cost_l = float(input("Cual es el precio de la luz?"))
-    #cost_w = float(input("Cual es el precio de el agua?"))
-    #cost_g = float(input("Cuales el precio del gas?"))
+    # cost_l = float(input("Cual es el precio de la luz?"))
+    # cost_w = float(input("Cual es el precio de el agua?"))
+    # cost_g = float(input("Cuales el precio del gas?"))
     cost_l = 1.85
     cost_w = 0
     cost_g = 8.65
@@ -105,6 +105,9 @@ def cal_and_print_all_times(folio_db, nlcad):  # Funcion que recolecta el result
             # Se agrega a una matriz con la forma folio-tiempos-velocidades
             times.append(machine_cost)
     # al terminar de recorrer todos los folios se imprime en un archivo delimitados por comas
+
+    n_times = net_times(times)
+
     with open('Cost.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(times)
@@ -228,6 +231,26 @@ def cost_maquina(machine_times, cost_l, cost_w, cost_g):
     cost_rama = machine_times[6] * cost_p_min_rama
 
     return cost_atm, cost_jet, cost_com, cost_ht, cost_stork, cost_rama
+
+
+def net_times(times):
+    len_a = len(times)
+    total_atm = 0
+    total_jet = 0
+    total_combi = 0
+    total_ht = 0
+    total_stork = 0
+    total_rama = 0
+    for i in range(len_a):
+        total_atm = total_atm + times[i][1]
+        total_jet = total_jet + times[i][2]
+        total_combi = total_combi + times[i][3]
+        total_ht = total_ht + times[i][4]
+        total_stork = total_stork + times[i][5]
+        total_rama = total_rama + times[i][6]
+    n_times = [total_atm, total_jet, total_combi, total_ht, total_stork, total_rama]
+    print(n_times)
+    return n_times
 
 
 def consumos_maquina(cost_w, cost_l, cost_g):
