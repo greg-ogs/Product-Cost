@@ -4,8 +4,9 @@ Created on Mon Jun  5 11:07:01 2023
 
 @author: Gregorio Alejandro Oropeza Gomez
 Aqui no usamos self porque somos medio masoqyistas
+
 Y tambien esta el porque no es bueno trabajar en empresas pequeñas donde el dueño se siente un sabelotodo y
-no quiere comprar medidores asi que aqui me tienen haciendo tanteadas
+no quiere comprar medidores asi que aqui me tienen haciendo adivinanzas para aproximar el consumo
 """
 
 import costos as co
