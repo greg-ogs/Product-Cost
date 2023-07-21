@@ -136,14 +136,15 @@ class MainWindow(QMainWindow):
         self.init_ui()
 
     def init_ui(self):
-        self.setWindowTitle("Costos")
+        self.setWindowTitle("Estimacion de costos")
         self.setGeometry(50, 50, 400, 300)
 
-        self.label = QLabel("En espera", self)
-        self.label.setGeometry(50, 50, 200, 30)
+        self.label = QLabel("En espera...", self)
+        self.label.setGeometry(155, 70, 300, 30)
 
-        self.button = QPushButton("Haz clic", self)
-        self.button.setGeometry(50, 100, 100, 30)
+        self.button = QPushButton("Haz clic pa generar el reporte", self)
+        self.button.setGeometry(50, 100, 300, 30)
+        self.button.setStyleSheet("background-color: #1DA1F2; color: white; font-size: 16px;")
         self.button.clicked.connect(self.on_button_click)
 
     def on_button_click(self):
