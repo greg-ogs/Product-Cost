@@ -77,17 +77,17 @@ def metros_re(nlcad, i):
     return metros_r
 
 
-def cost_maquina(machine_times, cost_l, cost_w, cost_g, general_p_min):
+def cost_maquina(machine_times, cost_l, cost_w, cost_g, general_p_min, nom_p_min_jig, nom_p_min_stork, nom_p_min_rama):
     # noFolio, tiempoATM, tiempoJet, tiempoCombi, tiempoHT, tiempoStork, tiempoRama
     cost_p_min_atm, cost_p_min_jet, cost_p_min_com, cost_p_min_ht, cost_p_min_stork, cost_p_min_rama = consumos_maquina(
         cost_w, cost_l, cost_g)
     # costElitex = machineTimes[][]
-    cost_atm = machine_times[1] * cost_p_min_atm + machine_times[1] * general_p_min
-    cost_jet = machine_times[2] * cost_p_min_jet + machine_times[2] * general_p_min
-    cost_com = machine_times[3] * cost_p_min_com + machine_times[3] * general_p_min
-    cost_ht = machine_times[4] * cost_p_min_ht + machine_times[4] * general_p_min
-    cost_stork = machine_times[5] * cost_p_min_stork + machine_times[5] * general_p_min
-    cost_rama = machine_times[6] * cost_p_min_rama + machine_times[6] * general_p_min
+    cost_atm = machine_times[1] * cost_p_min_atm + machine_times[1] * general_p_min + machine_times[1] * nom_p_min_jig
+    cost_jet = machine_times[2] * cost_p_min_jet + machine_times[2] * general_p_min + machine_times[2] * nom_p_min_jig
+    cost_com = machine_times[3] * cost_p_min_com + machine_times[3] * general_p_min + machine_times[3] * nom_p_min_jig
+    cost_ht = machine_times[4] * cost_p_min_ht + machine_times[4] * general_p_min + machine_times[4] * nom_p_min_jig
+    cost_stork = machine_times[5] * cost_p_min_stork + machine_times[5] * general_p_min + machine_times[5] * nom_p_min_stork
+    cost_rama = machine_times[6] * cost_p_min_rama + machine_times[6] * general_p_min + machine_times[6] * nom_p_min_rama
     return cost_atm, cost_jet, cost_com, cost_ht, cost_stork, cost_rama
 
 
@@ -114,6 +114,15 @@ def nom():
     nom_stork = list_gastos_data[0][17]
     nom_rama = list_gastos_data[0][6]
     return nom_jiggers, nom_stork, nom_rama
+
+
+def nom_p_min(ne_times):
+    nom_jiggers, nom_stork, nom_rama = nom()
+    jigger_times = ne_times[0] + ne_times[1] + ne_times[2] + ne_times[3]
+    nom_p_min_jig = nom_jiggers / jigger_times
+    nom_p_min_stork = nom_stork / ne_times[4]
+    nom_p_min_rama = nom_rama / ne_times[5]
+    return nom_p_min_jig, nom_p_min_stork, nom_p_min_rama
 
 
 def net_times(folio_db, nlcad):

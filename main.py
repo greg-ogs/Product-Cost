@@ -89,9 +89,7 @@ class Back:
         n_times, ne_times = co.net_times(folio_db, nlcad)  # Calculo del tiempo general y por maquina
         net_general = co.general()  # Money per week
         general_p_min = net_general / n_times  # Per minute
-        nom_jiggers, nom_stork, nom_rama = co.nom()
-        print(ne_times)
-
+        nom_p_min_jig, nom_p_min_stork, nom_p_min_rama = co.nom_p_min(ne_times)
         for i in range(len_c):  # Para cada folio
             folio_to_calc = folio_db[i][:][:]  # Toma la info de cada folio
             if len(folio_db[i][:][:]) > 0:
@@ -116,7 +114,10 @@ class Back:
                 # Call cost function
                 cost_atm, cost_jet, cost_com, cost_ht, cost_stork, cost_rama = co.cost_maquina(machine_times, cost_l,
                                                                                                cost_w,
-                                                                                               cost_g, general_p_min)
+                                                                                               cost_g, general_p_min,
+                                                                                               nom_p_min_jig,
+                                                                                               nom_p_min_stork,
+                                                                                               nom_p_min_rama)
                 # Add cost per machine
                 machine_cost = [no_folio, tiempo_atm, tiempo_jet, tiempo_combi, tiempo_ht, tiempo_stork, tiempo_rama,
                                 metros_r, cost_atm, cost_jet, cost_com, cost_ht, cost_stork, cost_rama, vel_atm,
