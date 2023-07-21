@@ -3,7 +3,7 @@
 Created on Mon Jun  5 11:07:01 2023
 
 @author: Gregorio Alejandro Oropeza Gomez
-Aqui no usamos self porque somos medio masoqyistas
+Aqui casi no usamos self porque somos medio masoqyistas
 
 Y tambien esta el porque no es bueno trabajar en empresas pequeñas donde el dueño se siente un sabelotodo y
 no quiere comprar medidores asi que aqui me tienen haciendo adivinanzas para aproximar el consumo
@@ -85,9 +85,12 @@ class Back:
         cost_w = 0
         cost_g = 8.65
         times = []
-        n_times = co.net_times(folio_db, nlcad)  # Calculo del tiempo general y por maquina
+
+        n_times, ne_times = co.net_times(folio_db, nlcad)  # Calculo del tiempo general y por maquina
         net_general = co.general()  # Money per week
         general_p_min = net_general / n_times  # Per minute
+        nom_jiggers, nom_stork, nom_rama = co.nom()
+        print(ne_times)
 
         for i in range(len_c):  # Para cada folio
             folio_to_calc = folio_db[i][:][:]  # Toma la info de cada folio
@@ -124,7 +127,7 @@ class Back:
                 times.append(machine_cost)
         # al terminar de recorrer todos los folios se imprime en un archivo delimitados por comas
 
-        with open('Cost.csv', 'a', newline='') as file:
+        with open('Costos.csv', 'a', newline='') as file:
             writer = csv.writer(file)
             writer.writerows(times)
             file.close()

@@ -91,15 +91,29 @@ def cost_maquina(machine_times, cost_l, cost_w, cost_g, general_p_min):
     return cost_atm, cost_jet, cost_com, cost_ht, cost_stork, cost_rama
 
 
-def general():
+def read_gastos_csv():
     gastos_data = pd.read_csv('Gastos.csv',
                               encoding='latin1')  # Lee el archivo de gastos generales
     list_gastos_data = gastos_data.values.tolist()
-    net_general = list_gastos_data[0][3]
+    return list_gastos_data
+
+
+def general():
+    list_gastos_data = read_gastos_csv()
+    net_general = list_gastos_data[0][16]
+    #   print(net_general)
     net_general = net_general.replace("'", "")
     net_general = net_general.replace(",", "")
     net_general = float(net_general)
     return net_general
+
+
+def nom():
+    list_gastos_data = read_gastos_csv()
+    nom_jiggers = list_gastos_data[0][7]
+    nom_stork = list_gastos_data[0][17]
+    nom_rama = list_gastos_data[0][6]
+    return nom_jiggers, nom_stork, nom_rama
 
 
 def net_times(folio_db, nlcad):
@@ -132,7 +146,7 @@ def net_times(folio_db, nlcad):
         total_rama = total_rama + machine_times[i][5]
     ne_times = [total_atm, total_jet, total_combi, total_ht, total_stork, total_rama]
     n_times = sum(ne_times)
-    return n_times
+    return n_times, ne_times
 
 
 def consumos_maquina(cost_w, cost_l, cost_g):
