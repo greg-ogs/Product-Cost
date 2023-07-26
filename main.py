@@ -80,7 +80,7 @@ class Back:
         tiempo_stork = 0
         len_fd = len(folio_data)
         for i in range(len_fd):
-            if folio_data[i][5] == "Estampadora":
+            if folio_data[i][5] == "Estampadora" or folio_data[i][5] == "Estampadora Storck":
                 tiempo_stork = tiempo_stork + int(folio_data[i][11])
         # Jigger HT
         tiempo_ht = 0
@@ -251,8 +251,10 @@ class Back:
         cost_l = 3.1012
         cost_w = 0
         cost_g = 8.65
-        times = []
-
+        title = ["no_folio", "tiempo_atm", "tiempo_jet", "tiempo_combi", "tiempo_ht", "tiempo_stork", "tiempo_rama",
+                 "metros_en_almacen", "costo_atm", "costo_jet", "costo_com", "costo_ht", "costo_stork", "costo_rama",
+                 "vel_atm", "vel_jet", "vel_com", "vel_ht", "vel_stork", "vel_rama"]
+        times = [title]
         n_times, ne_times = Back.net_times(folio_db, nlcad)  # Calculo del tiempo general y por maquina
         net_general = Back.general()  # Money per week
         general_p_min = net_general / n_times  # Per minute
